@@ -28,7 +28,7 @@ static NSString *cellID = @"cellID";
                         @"none",
                         @"none",];
     [self.view addSubview:self.mainTableView];
-    self.mainTableView.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
+    self.mainTableView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
 //    [self.mainTableView mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.edges.equalTo(self.view);
 //    }];

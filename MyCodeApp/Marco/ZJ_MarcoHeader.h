@@ -8,9 +8,31 @@
 #ifndef ZJ_MarcoHeader_h
 #define ZJ_MarcoHeader_h
 
-//常用宽高
-#define ScreenHeight [UIScreen mainScreen].bounds.size.height
-#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+
+/// 设备类型
+#define IS_IPAD [ZJ_MarcoHelper isIPad]
+#define IS_IPOD [ZJ_MarcoHelper isIPod]
+#define IS_IPHONE [ZJ_MarcoHelper isIPhone]
+#define IS_SIMULATOR [ZJ_MarcoHelper isSimulator]
+
+
+/// 是否横竖屏
+/// 用户界面横屏了才会返回YES
+#define IS_LANDSCAPE UIInterfaceOrientationIsLandscape([[UIApplication sharedApplication] statusBarOrientation])
+/// 无论支不支持横屏，只要设备横屏了，就会返回YES
+#define IS_DEVICE_LANDSCAPE UIDeviceOrientationIsLandscape([[UIDevice currentDevice] orientation])
+
+/// 屏幕宽度，会根据横竖屏的变化而变化
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+
+/// 屏幕高度，会根据横竖屏的变化而变化
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+
+/// 屏幕宽度，跟横竖屏无关
+#define DEVICE_WIDTH (IS_LANDSCAPE ? [[UIScreen mainScreen] bounds].size.height : [[UIScreen mainScreen] bounds].size.width)
+
+/// 屏幕高度，跟横竖屏无关
+#define DEVICE_HEIGHT (IS_LANDSCAPE ? [[UIScreen mainScreen] bounds].size.width : [[UIScreen mainScreen] bounds].size.height)
 
 #define kStatusBarHeight [UIApplication sharedApplication].statusBarFrame.size.height
 #define kNavBarHeight (44)
@@ -19,21 +41,22 @@
 #define kStatusBar (iPhoneMAXR ? 44.0 : 22.0)
 #define KTabSacl (iPhoneMAXR ? 34.0 : 0.1)
 
+/// 是否Retina
+#define IS_RETINASCREEN ([[UIScreen mainScreen] scale] >= 2.0)
 
-//机型判断
-#define iPhoneMAXR (UIScreen.mainScreen.bounds.size.height >= 812.0 ? true : false)
+/// 是否放大模式（iPhone 6及以上的设备支持放大模式）
+#define IS_ZOOMEDMODE ([[UIScreen mainScreen] respondsToSelector:@selector(nativeScale)] ? (ScreenNativeScale > ScreenScale) : NO)
 
-#define isiPhone5               ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? \
-CGSizeEqualToSize(CGSizeMake(640, 1136), \
-[[UIScreen mainScreen] currentMode].size) : \
-NO)
+#pragma mark - 变量-布局相关
 
-#define isiPhone6               ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+/// 获取一个像素
+#define PixelOne [QMUIHelper pixelOne]
 
-#define isiPhone6PLUS ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) && SCREEN_MAX_LENGTH == 736.0)
-
-#define isiPhoneXs  ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
-
+/// bounds && nativeBounds / scale && nativeScale
+#define ScreenBoundsSize ([[UIScreen mainScreen] bounds].size)
+#define ScreenNativeBoundsSize ([[UIScreen mainScreen] nativeBounds].size)
+#define ScreenScale ([[UIScreen mainScreen] scale])
+#define ScreenNativeScale ([[UIScreen mainScreen] nativeScale])
 
 // ================颜色相关================
 #define WWRgbColor(r, g, b)       [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
