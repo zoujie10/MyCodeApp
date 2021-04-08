@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-
+#import "ZJ_CodeBlockVC.h"
 
 static NSString *cellID = @"cellID";
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -44,6 +44,23 @@ static NSString *cellID = @"cellID";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
     cell.textLabel.text = self.dataSource[indexPath.row];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if([self.dataSource[indexPath.row] isEqualToString:@"Code Block"]){
+        ZJ_CodeBlockVC *VC = [ZJ_CodeBlockVC new];
+        VC.blockEG = ^(CGSize Size, NSString * _Nonnull str) {
+            
+        };
+        [self.navigationController pushViewController:VC animated:YES];
+    
+    }else if ([self.dataSource[indexPath.row] isEqualToString:@"Function Code"]){
+        
+    }else if ([self.dataSource[indexPath.row] isEqualToString:@"Macro"]){
+        
+    }else if ([self.dataSource[indexPath.row] isEqualToString:@"Third Parth"]){
+        
+    }
 }
 
 - (UITableView *)mainTableView {

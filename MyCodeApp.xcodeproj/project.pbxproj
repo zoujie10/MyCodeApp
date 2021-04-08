@@ -21,6 +21,8 @@
 		4FD20B62261D6A3000381508 /* NSArray+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD20B61261D6A3000381508 /* NSArray+Extension.m */; };
 		4FD20B65261D886C00381508 /* NSCharacterSet+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD20B64261D886C00381508 /* NSCharacterSet+Extension.m */; };
 		4FD20B69261D89C700381508 /* NSNumber+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD20B68261D89C600381508 /* NSNumber+Extension.m */; };
+		4FD20B74261E9FED00381508 /* ZJ_CodeBlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD20B73261E9FED00381508 /* ZJ_CodeBlockVC.m */; };
+		4FD20B80261EE47F00381508 /* ZJUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD20B7F261EE47F00381508 /* ZJUILabel.m */; };
 		755804D084A237FA9EB2B543 /* Pods_MyCodeApp_MyCodeAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EAE2FFCF9B9A5D7E049539D /* Pods_MyCodeApp_MyCodeAppUITests.framework */; };
 		793A16AAA9D5648B8B3235C0 /* Pods_MyCodeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6904B826A16EFF82FF6A5EB3 /* Pods_MyCodeAppTests.framework */; };
 		D6D44FB5BF7139F51513DE02 /* Pods_MyCodeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BF1EDAA16BF63F7EC3893A /* Pods_MyCodeApp.framework */; };
@@ -75,6 +77,10 @@
 		4FD20B64261D886C00381508 /* NSCharacterSet+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSCharacterSet+Extension.m"; sourceTree = "<group>"; };
 		4FD20B67261D89C600381508 /* NSNumber+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Extension.h"; sourceTree = "<group>"; };
 		4FD20B68261D89C600381508 /* NSNumber+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Extension.m"; sourceTree = "<group>"; };
+		4FD20B72261E9FED00381508 /* ZJ_CodeBlockVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJ_CodeBlockVC.h; sourceTree = "<group>"; };
+		4FD20B73261E9FED00381508 /* ZJ_CodeBlockVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJ_CodeBlockVC.m; sourceTree = "<group>"; };
+		4FD20B7E261EE47F00381508 /* ZJUILabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJUILabel.h; sourceTree = "<group>"; };
+		4FD20B7F261EE47F00381508 /* ZJUILabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJUILabel.m; sourceTree = "<group>"; };
 		58650A37468E70A64FE44B48 /* Pods-MyCodeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCodeApp.release.xcconfig"; path = "Target Support Files/Pods-MyCodeApp/Pods-MyCodeApp.release.xcconfig"; sourceTree = "<group>"; };
 		5EAE2FFCF9B9A5D7E049539D /* Pods_MyCodeApp_MyCodeAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCodeApp_MyCodeAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6904B826A16EFF82FF6A5EB3 /* Pods_MyCodeAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCodeAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +144,7 @@
 		4FD20B05261C07BF00381508 /* MyCodeApp */ = {
 			isa = PBXGroup;
 			children = (
+				4FD20B7D261EE43000381508 /* UIComponents */,
 				4FD20B3E261C0A3200381508 /* Code Block */,
 				4FD20B3F261C0A4400381508 /* Function Code */,
 				4FD20B40261C0A5100381508 /* Marco */,
@@ -179,6 +186,8 @@
 		4FD20B3E261C0A3200381508 /* Code Block */ = {
 			isa = PBXGroup;
 			children = (
+				4FD20B72261E9FED00381508 /* ZJ_CodeBlockVC.h */,
+				4FD20B73261E9FED00381508 /* ZJ_CodeBlockVC.m */,
 			);
 			path = "Code Block";
 			sourceTree = "<group>";
@@ -213,6 +222,15 @@
 				4FD20B68261D89C600381508 /* NSNumber+Extension.m */,
 			);
 			path = UIKitExtension;
+			sourceTree = "<group>";
+		};
+		4FD20B7D261EE43000381508 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				4FD20B7E261EE47F00381508 /* ZJUILabel.h */,
+				4FD20B7F261EE47F00381508 /* ZJUILabel.m */,
+			);
+			path = UIComponents;
 			sourceTree = "<group>";
 		};
 		6E7258A66D037B19C8B51F4E /* Frameworks */ = {
@@ -460,8 +478,10 @@
 				4FD20B0E261C07BF00381508 /* ViewController.m in Sources */,
 				4FD20B69261D89C700381508 /* NSNumber+Extension.m in Sources */,
 				4FD20B5F261D68AB00381508 /* NSString+Extension.m in Sources */,
+				4FD20B74261E9FED00381508 /* ZJ_CodeBlockVC.m in Sources */,
 				4FD20B08261C07BF00381508 /* AppDelegate.m in Sources */,
 				4FD20B19261C07C400381508 /* main.m in Sources */,
+				4FD20B80261EE47F00381508 /* ZJUILabel.m in Sources */,
 				4FD20B57261D522900381508 /* ZJ_MarcoHelper.m in Sources */,
 				4FD20B0B261C07BF00381508 /* SceneDelegate.m in Sources */,
 				4FD20B62261D6A3000381508 /* NSArray+Extension.m in Sources */,
