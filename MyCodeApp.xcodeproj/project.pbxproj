@@ -23,6 +23,8 @@
 		4FD20B69261D89C700381508 /* NSNumber+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD20B68261D89C600381508 /* NSNumber+Extension.m */; };
 		4FD20B74261E9FED00381508 /* ZJ_CodeBlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD20B73261E9FED00381508 /* ZJ_CodeBlockVC.m */; };
 		4FD20B80261EE47F00381508 /* ZJUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD20B7F261EE47F00381508 /* ZJUILabel.m */; };
+		4FD20B8B262000F900381508 /* FunctionCodeListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD20B8A262000F900381508 /* FunctionCodeListVC.m */; };
+		4FD20B8F262001FA00381508 /* ThirdPartyDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD20B8E262001FA00381508 /* ThirdPartyDemoVC.m */; };
 		755804D084A237FA9EB2B543 /* Pods_MyCodeApp_MyCodeAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EAE2FFCF9B9A5D7E049539D /* Pods_MyCodeApp_MyCodeAppUITests.framework */; };
 		793A16AAA9D5648B8B3235C0 /* Pods_MyCodeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6904B826A16EFF82FF6A5EB3 /* Pods_MyCodeAppTests.framework */; };
 		D6D44FB5BF7139F51513DE02 /* Pods_MyCodeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BF1EDAA16BF63F7EC3893A /* Pods_MyCodeApp.framework */; };
@@ -81,6 +83,10 @@
 		4FD20B73261E9FED00381508 /* ZJ_CodeBlockVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJ_CodeBlockVC.m; sourceTree = "<group>"; };
 		4FD20B7E261EE47F00381508 /* ZJUILabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJUILabel.h; sourceTree = "<group>"; };
 		4FD20B7F261EE47F00381508 /* ZJUILabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJUILabel.m; sourceTree = "<group>"; };
+		4FD20B89262000F900381508 /* FunctionCodeListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionCodeListVC.h; sourceTree = "<group>"; };
+		4FD20B8A262000F900381508 /* FunctionCodeListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionCodeListVC.m; sourceTree = "<group>"; };
+		4FD20B8D262001FA00381508 /* ThirdPartyDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdPartyDemoVC.h; sourceTree = "<group>"; };
+		4FD20B8E262001FA00381508 /* ThirdPartyDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdPartyDemoVC.m; sourceTree = "<group>"; };
 		58650A37468E70A64FE44B48 /* Pods-MyCodeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCodeApp.release.xcconfig"; path = "Target Support Files/Pods-MyCodeApp/Pods-MyCodeApp.release.xcconfig"; sourceTree = "<group>"; };
 		5EAE2FFCF9B9A5D7E049539D /* Pods_MyCodeApp_MyCodeAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCodeApp_MyCodeAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6904B826A16EFF82FF6A5EB3 /* Pods_MyCodeAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCodeAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +153,7 @@
 				4FD20B7D261EE43000381508 /* UIComponents */,
 				4FD20B3E261C0A3200381508 /* Code Block */,
 				4FD20B3F261C0A4400381508 /* Function Code */,
+				4FD20B8C262001CA00381508 /* ThirdPartyDemo */,
 				4FD20B40261C0A5100381508 /* Marco */,
 				4FD20B5C261D66B700381508 /* UIKitExtension */,
 				4FD20B06261C07BF00381508 /* AppDelegate.h */,
@@ -195,6 +202,8 @@
 		4FD20B3F261C0A4400381508 /* Function Code */ = {
 			isa = PBXGroup;
 			children = (
+				4FD20B89262000F900381508 /* FunctionCodeListVC.h */,
+				4FD20B8A262000F900381508 /* FunctionCodeListVC.m */,
 			);
 			path = "Function Code";
 			sourceTree = "<group>";
@@ -231,6 +240,15 @@
 				4FD20B7F261EE47F00381508 /* ZJUILabel.m */,
 			);
 			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		4FD20B8C262001CA00381508 /* ThirdPartyDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4FD20B8D262001FA00381508 /* ThirdPartyDemoVC.h */,
+				4FD20B8E262001FA00381508 /* ThirdPartyDemoVC.m */,
+			);
+			path = ThirdPartyDemo;
 			sourceTree = "<group>";
 		};
 		6E7258A66D037B19C8B51F4E /* Frameworks */ = {
@@ -482,8 +500,10 @@
 				4FD20B08261C07BF00381508 /* AppDelegate.m in Sources */,
 				4FD20B19261C07C400381508 /* main.m in Sources */,
 				4FD20B80261EE47F00381508 /* ZJUILabel.m in Sources */,
+				4FD20B8F262001FA00381508 /* ThirdPartyDemoVC.m in Sources */,
 				4FD20B57261D522900381508 /* ZJ_MarcoHelper.m in Sources */,
 				4FD20B0B261C07BF00381508 /* SceneDelegate.m in Sources */,
+				4FD20B8B262000F900381508 /* FunctionCodeListVC.m in Sources */,
 				4FD20B62261D6A3000381508 /* NSArray+Extension.m in Sources */,
 				4FD20B65261D886C00381508 /* NSCharacterSet+Extension.m in Sources */,
 			);

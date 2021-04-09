@@ -1,37 +1,36 @@
 //
-//  ZJ_CodeBlockVC.m
+//  FunctionCodeListVC.m
 //  MyCodeApp
 //
-//  Created by 邹杰 on 4/8/21.
+//  Created by 邹杰 on 4/9/21.
 //
 
-#import "ZJ_CodeBlockVC.h"
+#import "FunctionCodeListVC.h"
 
 static NSString *cellID = @"cellID";
-@interface ZJ_CodeBlockVC ()<UITableViewDelegate,UITableViewDataSource>
+@interface FunctionCodeListVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *mainTableView;
 @property (nonatomic, strong) NSArray *dataSource;
 
 @end
 
-@implementation ZJ_CodeBlockVC
+@implementation FunctionCodeListVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataSource = @[@"Code Block",
-                        @"Macro",
-                        @"Pod",
+    // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor yellowColor];
+    self.dataSource = @[@"UITips",
+                        @"none",
+                        @"none",
                         @"none",
                         @"none",
                         @"none",
                         @"none",];
     [self.view addSubview:self.mainTableView];
     self.mainTableView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
-//    [self.mainTableView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.edges.equalTo(self.view);
-//    }];
-    //test
 }
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }
