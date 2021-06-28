@@ -6,6 +6,7 @@
 //
 
 #import "FunctionCodeListVC.h"
+#import "ZJ_TimeDownVC.h"
 
 static NSString *cellID = @"cellID";
 @interface FunctionCodeListVC ()<UITableViewDelegate,UITableViewDataSource>
@@ -21,7 +22,7 @@ static NSString *cellID = @"cellID";
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor yellowColor];
     self.dataSource = @[@"UITips",
-                        @"none",
+                        @"TimeDown",
                         @"none",
                         @"none",
                         @"none",
@@ -46,8 +47,9 @@ static NSString *cellID = @"cellID";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if([self.dataSource[indexPath.row] isEqualToString:@"Code Block"]){
       
-    }else if ([self.dataSource[indexPath.row] isEqualToString:@""]){
-        
+    }else if ([self.dataSource[indexPath.row] isEqualToString:@"TimeDown"]){
+        ZJ_TimeDownVC *vc = [[ZJ_TimeDownVC alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
     }else if ([self.dataSource[indexPath.row] isEqualToString:@"Macro"]){
         
     }else if ([self.dataSource[indexPath.row] isEqualToString:@""]){

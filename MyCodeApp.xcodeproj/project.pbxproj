@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FCC721F26899A73006F725C /* ZJ_TimeDownVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC721E26899A73006F725C /* ZJ_TimeDownVC.m */; };
+		4FCC722326899BB6006F725C /* ZJ_TimeDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC722226899BB6006F725C /* ZJ_TimeDownView.m */; };
 		4FD20B08261C07BF00381508 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD20B07261C07BF00381508 /* AppDelegate.m */; };
 		4FD20B0B261C07BF00381508 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD20B0A261C07BF00381508 /* SceneDelegate.m */; };
 		4FD20B0E261C07BF00381508 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD20B0D261C07BF00381508 /* ViewController.m */; };
@@ -49,6 +51,10 @@
 
 /* Begin PBXFileReference section */
 		26FFC4CC723CDCA9DBCCE2C4 /* Pods-MyCodeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCodeApp.debug.xcconfig"; path = "Target Support Files/Pods-MyCodeApp/Pods-MyCodeApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4FCC721D26899A73006F725C /* ZJ_TimeDownVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJ_TimeDownVC.h; sourceTree = "<group>"; };
+		4FCC721E26899A73006F725C /* ZJ_TimeDownVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJ_TimeDownVC.m; sourceTree = "<group>"; };
+		4FCC722126899BB6006F725C /* ZJ_TimeDownView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJ_TimeDownView.h; sourceTree = "<group>"; };
+		4FCC722226899BB6006F725C /* ZJ_TimeDownView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJ_TimeDownView.m; sourceTree = "<group>"; };
 		4FD20B03261C07BF00381508 /* MyCodeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCodeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FD20B06261C07BF00381508 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4FD20B07261C07BF00381508 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -125,6 +131,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FCC722026899B91006F725C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4FCC722126899BB6006F725C /* ZJ_TimeDownView.h */,
+				4FCC722226899BB6006F725C /* ZJ_TimeDownView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4FCC722426899BBE006F725C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4FCC721D26899A73006F725C /* ZJ_TimeDownVC.h */,
+				4FCC721E26899A73006F725C /* ZJ_TimeDownVC.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		4FD20AFA261C07BF00381508 = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +226,8 @@
 		4FD20B3F261C0A4400381508 /* Function Code */ = {
 			isa = PBXGroup;
 			children = (
+				4FCC722426899BBE006F725C /* ViewController */,
+				4FCC722026899B91006F725C /* View */,
 				4FD20B89262000F900381508 /* FunctionCodeListVC.h */,
 				4FD20B8A262000F900381508 /* FunctionCodeListVC.m */,
 			);
@@ -500,10 +526,12 @@
 				4FD20B08261C07BF00381508 /* AppDelegate.m in Sources */,
 				4FD20B19261C07C400381508 /* main.m in Sources */,
 				4FD20B80261EE47F00381508 /* ZJUILabel.m in Sources */,
+				4FCC721F26899A73006F725C /* ZJ_TimeDownVC.m in Sources */,
 				4FD20B8F262001FA00381508 /* ThirdPartyDemoVC.m in Sources */,
 				4FD20B57261D522900381508 /* ZJ_MarcoHelper.m in Sources */,
 				4FD20B0B261C07BF00381508 /* SceneDelegate.m in Sources */,
 				4FD20B8B262000F900381508 /* FunctionCodeListVC.m in Sources */,
+				4FCC722326899BB6006F725C /* ZJ_TimeDownView.m in Sources */,
 				4FD20B62261D6A3000381508 /* NSArray+Extension.m in Sources */,
 				4FD20B65261D886C00381508 /* NSCharacterSet+Extension.m in Sources */,
 			);
