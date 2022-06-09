@@ -6,6 +6,7 @@
 //
 
 #import "ThirdPartyDemoVC.h"
+#import "BRPickerView.h"
 
 @interface ThirdPartyDemoVC ()
 

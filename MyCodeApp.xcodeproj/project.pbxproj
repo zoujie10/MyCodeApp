@@ -29,6 +29,17 @@
 		4FD20B8F262001FA00381508 /* ThirdPartyDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD20B8E262001FA00381508 /* ThirdPartyDemoVC.m */; };
 		755804D084A237FA9EB2B543 /* Pods_MyCodeApp_MyCodeAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EAE2FFCF9B9A5D7E049539D /* Pods_MyCodeApp_MyCodeAppUITests.framework */; };
 		793A16AAA9D5648B8B3235C0 /* Pods_MyCodeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6904B826A16EFF82FF6A5EB3 /* Pods_MyCodeAppTests.framework */; };
+		8480F72E28523CDF00F4303E /* BRResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480F71428523CDF00F4303E /* BRResultModel.m */; };
+		8480F72F28523CDF00F4303E /* BRStringPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480F71728523CDF00F4303E /* BRStringPickerView.m */; };
+		8480F73028523CDF00F4303E /* BRDatePickerView+BR.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480F71A28523CDF00F4303E /* BRDatePickerView+BR.m */; };
+		8480F73128523CDF00F4303E /* NSDate+BRPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480F71C28523CDF00F4303E /* NSDate+BRPickerView.m */; };
+		8480F73228523CDF00F4303E /* BRDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480F71D28523CDF00F4303E /* BRDatePickerView.m */; };
+		8480F73328523CDF00F4303E /* BRPickerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8480F72328523CDF00F4303E /* BRPickerView.bundle */; };
+		8480F73428523CDF00F4303E /* BRPickerStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480F72428523CDF00F4303E /* BRPickerStyle.m */; };
+		8480F73528523CDF00F4303E /* BRBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480F72528523CDF00F4303E /* BRBaseView.m */; };
+		8480F73628523CDF00F4303E /* NSBundle+BRPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480F72628523CDF00F4303E /* NSBundle+BRPickerView.m */; };
+		8480F73728523CDF00F4303E /* BRAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480F72A28523CDF00F4303E /* BRAddressModel.m */; };
+		8480F73828523CDF00F4303E /* BRAddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480F72D28523CDF00F4303E /* BRAddressPickerView.m */; };
 		D6D44FB5BF7139F51513DE02 /* Pods_MyCodeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BF1EDAA16BF63F7EC3893A /* Pods_MyCodeApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +108,29 @@
 		5EAE2FFCF9B9A5D7E049539D /* Pods_MyCodeApp_MyCodeAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCodeApp_MyCodeAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6904B826A16EFF82FF6A5EB3 /* Pods_MyCodeAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCodeAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81BF1EDAA16BF63F7EC3893A /* Pods_MyCodeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCodeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8480F71428523CDF00F4303E /* BRResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRResultModel.m; sourceTree = "<group>"; };
+		8480F71528523CDF00F4303E /* BRStringPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRStringPickerView.h; sourceTree = "<group>"; };
+		8480F71628523CDF00F4303E /* BRResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRResultModel.h; sourceTree = "<group>"; };
+		8480F71728523CDF00F4303E /* BRStringPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRStringPickerView.m; sourceTree = "<group>"; };
+		8480F71828523CDF00F4303E /* BRPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPickerView.h; sourceTree = "<group>"; };
+		8480F71A28523CDF00F4303E /* BRDatePickerView+BR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BRDatePickerView+BR.m"; sourceTree = "<group>"; };
+		8480F71B28523CDF00F4303E /* BRDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRDatePickerView.h; sourceTree = "<group>"; };
+		8480F71C28523CDF00F4303E /* NSDate+BRPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+BRPickerView.m"; sourceTree = "<group>"; };
+		8480F71D28523CDF00F4303E /* BRDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDatePickerView.m; sourceTree = "<group>"; };
+		8480F71E28523CDF00F4303E /* BRDatePickerView+BR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BRDatePickerView+BR.h"; sourceTree = "<group>"; };
+		8480F71F28523CDF00F4303E /* NSDate+BRPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+BRPickerView.h"; sourceTree = "<group>"; };
+		8480F72128523CDF00F4303E /* NSBundle+BRPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+BRPickerView.h"; sourceTree = "<group>"; };
+		8480F72228523CDF00F4303E /* BRPickerViewMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPickerViewMacro.h; sourceTree = "<group>"; };
+		8480F72328523CDF00F4303E /* BRPickerView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BRPickerView.bundle; sourceTree = "<group>"; };
+		8480F72428523CDF00F4303E /* BRPickerStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRPickerStyle.m; sourceTree = "<group>"; };
+		8480F72528523CDF00F4303E /* BRBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBaseView.m; sourceTree = "<group>"; };
+		8480F72628523CDF00F4303E /* NSBundle+BRPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+BRPickerView.m"; sourceTree = "<group>"; };
+		8480F72728523CDF00F4303E /* BRBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBaseView.h; sourceTree = "<group>"; };
+		8480F72828523CDF00F4303E /* BRPickerStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPickerStyle.h; sourceTree = "<group>"; };
+		8480F72A28523CDF00F4303E /* BRAddressModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAddressModel.m; sourceTree = "<group>"; };
+		8480F72B28523CDF00F4303E /* BRAddressPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAddressPickerView.h; sourceTree = "<group>"; };
+		8480F72C28523CDF00F4303E /* BRAddressModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAddressModel.h; sourceTree = "<group>"; };
+		8480F72D28523CDF00F4303E /* BRAddressPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAddressPickerView.m; sourceTree = "<group>"; };
 		8EB92B16F41CB5E109AE8B23 /* Pods-MyCodeApp-MyCodeAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCodeApp-MyCodeAppUITests.release.xcconfig"; path = "Target Support Files/Pods-MyCodeApp-MyCodeAppUITests/Pods-MyCodeApp-MyCodeAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		980395CCB5772613D38F931C /* Pods-MyCodeApp-MyCodeAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCodeApp-MyCodeAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MyCodeApp-MyCodeAppUITests/Pods-MyCodeApp-MyCodeAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9A6C240EA0E0248FFD598836 /* Pods-MyCodeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCodeAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MyCodeAppTests/Pods-MyCodeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -271,6 +305,7 @@
 		4FD20B8C262001CA00381508 /* ThirdPartyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8480F71128523CBB00F4303E /* ThirdPart */,
 				4FD20B8D262001FA00381508 /* ThirdPartyDemoVC.h */,
 				4FD20B8E262001FA00381508 /* ThirdPartyDemoVC.m */,
 			);
@@ -285,6 +320,76 @@
 				6904B826A16EFF82FF6A5EB3 /* Pods_MyCodeAppTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8480F71128523CBB00F4303E /* ThirdPart */ = {
+			isa = PBXGroup;
+			children = (
+				8480F71228523CDF00F4303E /* BRPickerView */,
+			);
+			path = ThirdPart;
+			sourceTree = "<group>";
+		};
+		8480F71228523CDF00F4303E /* BRPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				8480F71328523CDF00F4303E /* StringPickerView */,
+				8480F71828523CDF00F4303E /* BRPickerView.h */,
+				8480F71928523CDF00F4303E /* DatePickerView */,
+				8480F72028523CDF00F4303E /* Base */,
+				8480F72928523CDF00F4303E /* AddressPickerView */,
+			);
+			path = BRPickerView;
+			sourceTree = "<group>";
+		};
+		8480F71328523CDF00F4303E /* StringPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				8480F71428523CDF00F4303E /* BRResultModel.m */,
+				8480F71528523CDF00F4303E /* BRStringPickerView.h */,
+				8480F71628523CDF00F4303E /* BRResultModel.h */,
+				8480F71728523CDF00F4303E /* BRStringPickerView.m */,
+			);
+			path = StringPickerView;
+			sourceTree = "<group>";
+		};
+		8480F71928523CDF00F4303E /* DatePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				8480F71A28523CDF00F4303E /* BRDatePickerView+BR.m */,
+				8480F71B28523CDF00F4303E /* BRDatePickerView.h */,
+				8480F71C28523CDF00F4303E /* NSDate+BRPickerView.m */,
+				8480F71D28523CDF00F4303E /* BRDatePickerView.m */,
+				8480F71E28523CDF00F4303E /* BRDatePickerView+BR.h */,
+				8480F71F28523CDF00F4303E /* NSDate+BRPickerView.h */,
+			);
+			path = DatePickerView;
+			sourceTree = "<group>";
+		};
+		8480F72028523CDF00F4303E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8480F72128523CDF00F4303E /* NSBundle+BRPickerView.h */,
+				8480F72228523CDF00F4303E /* BRPickerViewMacro.h */,
+				8480F72328523CDF00F4303E /* BRPickerView.bundle */,
+				8480F72428523CDF00F4303E /* BRPickerStyle.m */,
+				8480F72528523CDF00F4303E /* BRBaseView.m */,
+				8480F72628523CDF00F4303E /* NSBundle+BRPickerView.m */,
+				8480F72728523CDF00F4303E /* BRBaseView.h */,
+				8480F72828523CDF00F4303E /* BRPickerStyle.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8480F72928523CDF00F4303E /* AddressPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				8480F72A28523CDF00F4303E /* BRAddressModel.m */,
+				8480F72B28523CDF00F4303E /* BRAddressPickerView.h */,
+				8480F72C28523CDF00F4303E /* BRAddressModel.h */,
+				8480F72D28523CDF00F4303E /* BRAddressPickerView.m */,
+			);
+			path = AddressPickerView;
 			sourceTree = "<group>";
 		};
 		D0F98B4DAD31435882207F5D /* Pods */ = {
@@ -406,6 +511,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8480F73328523CDF00F4303E /* BRPickerView.bundle in Resources */,
 				4FD20B16261C07C400381508 /* LaunchScreen.storyboard in Resources */,
 				4FD20B13261C07C400381508 /* Assets.xcassets in Resources */,
 				4FD20B11261C07BF00381508 /* Main.storyboard in Resources */,
@@ -525,14 +631,24 @@
 				4FD20B74261E9FED00381508 /* ZJ_CodeBlockVC.m in Sources */,
 				4FD20B08261C07BF00381508 /* AppDelegate.m in Sources */,
 				4FD20B19261C07C400381508 /* main.m in Sources */,
+				8480F73728523CDF00F4303E /* BRAddressModel.m in Sources */,
+				8480F73428523CDF00F4303E /* BRPickerStyle.m in Sources */,
+				8480F73828523CDF00F4303E /* BRAddressPickerView.m in Sources */,
+				8480F73028523CDF00F4303E /* BRDatePickerView+BR.m in Sources */,
 				4FD20B80261EE47F00381508 /* ZJUILabel.m in Sources */,
+				8480F73528523CDF00F4303E /* BRBaseView.m in Sources */,
 				4FCC721F26899A73006F725C /* ZJ_TimeDownVC.m in Sources */,
 				4FD20B8F262001FA00381508 /* ThirdPartyDemoVC.m in Sources */,
+				8480F72F28523CDF00F4303E /* BRStringPickerView.m in Sources */,
 				4FD20B57261D522900381508 /* ZJ_MarcoHelper.m in Sources */,
+				8480F73228523CDF00F4303E /* BRDatePickerView.m in Sources */,
 				4FD20B0B261C07BF00381508 /* SceneDelegate.m in Sources */,
 				4FD20B8B262000F900381508 /* FunctionCodeListVC.m in Sources */,
 				4FCC722326899BB6006F725C /* ZJ_TimeDownView.m in Sources */,
+				8480F73128523CDF00F4303E /* NSDate+BRPickerView.m in Sources */,
+				8480F73628523CDF00F4303E /* NSBundle+BRPickerView.m in Sources */,
 				4FD20B62261D6A3000381508 /* NSArray+Extension.m in Sources */,
+				8480F72E28523CDF00F4303E /* BRResultModel.m in Sources */,
 				4FD20B65261D886C00381508 /* NSCharacterSet+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -709,6 +825,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SF5VKU74NM;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MyCodeApp/PrefixHeader.pch;
 				INFOPLIST_FILE = MyCodeApp/Info.plist;
@@ -734,6 +851,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SF5VKU74NM;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MyCodeApp/PrefixHeader.pch;
 				INFOPLIST_FILE = MyCodeApp/Info.plist;
