@@ -9,7 +9,7 @@
 #import "BRPickerView.h"
 
 @interface ThirdPartyDemoVC ()
-
+@property (nonatomic, strong) BRDatePickerView *datePickerView;
 @end
 
 @implementation ThirdPartyDemoVC
@@ -20,14 +20,27 @@
     self.view.backgroundColor = [UIColor orangeColor];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+	BRDatePickerView *datePickerView = [[BRDatePickerView alloc]init];
+	datePickerView.pickerMode = BRDatePickerModeYMDH;
+	datePickerView.maxDate = [NSDate date];
+	datePickerView.isAutoSelect = YES;
+	datePickerView.showUnitType = BRShowUnitTypeNone;
+	datePickerView.title = @"日期选择";
+	datePickerView.resultBlock = ^(NSDate *selectDate, NSString *selectValue) {
+	};
+	
+//	// 自定义选择器主题样式
+	BRPickerStyle *customStyle = [[BRPickerStyle alloc]init];
+	customStyle.doneTextColor = UIColor.redColor;
+	customStyle.titleTextColor = UIColor.blackColor;
+	datePickerView.pickerStyle = customStyle;
+	
+	self.datePickerView = datePickerView;
+	self.datePickerView.pickerMode = BRDatePickerModeYM;
+	[self.datePickerView show];
+//	// 添加选择器到容器视图
+//	[datePickerView addPickerToView:containerView];
 }
-*/
 
 @end
