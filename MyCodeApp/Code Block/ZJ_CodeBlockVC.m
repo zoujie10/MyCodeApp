@@ -6,6 +6,7 @@
 //
 
 #import "ZJ_CodeBlockVC.h"
+#import "ZJ_CodeBlockViewController.h"
 
 static NSString *cellID = @"cellID";
 @interface ZJ_CodeBlockVC ()<UITableViewDelegate,UITableViewDataSource>
@@ -46,7 +47,8 @@ static NSString *cellID = @"cellID";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if([self.dataSource[indexPath.row] isEqualToString:@"Code Block"]){
-      
+		ZJ_CodeBlockViewController *vc = [[ZJ_CodeBlockViewController alloc]init];
+		[self.navigationController pushViewController:vc animated:YES];
     }else if ([self.dataSource[indexPath.row] isEqualToString:@""]){
         
     }else if ([self.dataSource[indexPath.row] isEqualToString:@"Macro"]){
