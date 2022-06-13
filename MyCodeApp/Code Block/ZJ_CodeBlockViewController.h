@@ -15,7 +15,7 @@ typedef NS_ENUM(NSUInteger, ZJ_ENUM_EG) {
 	ZJ_ENUM_EG_Three,
 	ZJ_ENUM_EG_Four
 };
-#pragma mark block
+#pragma mark Block
 typedef void (^BlockName)(CGSize Size,NSString *str);
 
 @interface ZJ_CodeBlockViewController : UIViewController
