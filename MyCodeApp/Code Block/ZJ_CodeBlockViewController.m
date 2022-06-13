@@ -7,12 +7,12 @@
 
 #import "ZJ_CodeBlockViewController.h"
 
-@interface ZJ_CodeBlockViewController ()
+@interface ZJ_CodeBlockViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong)UIButton *Btn;
 @property (nonatomic,strong)UILabel *Lbl;
 @property (nonatomic,strong)UIImageView *imageView;
-@property (nonatomic,strong)UITableView *mainTabelView;
-@property (nonatomic,strong)UICollectionView *mainCollecView;
+@property (nonatomic,strong)UITableView *mainTableView;
+@property (nonatomic,strong)UICollectionView *mainCollectionView;
 @end
 
 @implementation ZJ_CodeBlockViewController
@@ -106,11 +106,26 @@
 		scrollView.contentInset = UIEdgeInsetsMake(-sectionHeaderHeight, 0, 0, 0);
 	}
 }
-- (UITableView *)mainTabelView{
-	if(!_mainTabelView){
-		_mainTabelView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStyleGrouped];
+- (UITableView *)_mainTableView{
+	if(!_mainTableView){
+		_mainTableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStyleGrouped];
+		_mainTableView.contentInset = UIEdgeInsetsMake(15, 0, 0, 0);
+		_mainTableView.delegate = self;
+		_mainTableView.dataSource = self;
+		_mainTableView.showsVerticalScrollIndicator = NO;
+		_mainTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+		_mainTableView.backgroundColor = WWRgbColor(247, 247, 247);
 	}
-	return _mainTabelView;
+	return _mainTableView;
 }
-
+-(void)registerCell{
+//	ShowCell = @[WWBDCustomerApplyAuthLetterTitleLabelCell.class,
+//							WWBDCustomerApplyAuthLetterTextFieldCell.class,
+//							WWBDCustomerApplyAuthLetterTitleLabelCell.class,
+//							WWBDCustomerApplyAuthLetterLabelAndAlertCell.class,
+//							WWBDCustomerApplyAuthLetterTextFieldCell.class];
+//	[ShowCell enumerateObjectsUsingBlock:^(UITableViewCell *cell, NSUInteger idx, BOOL * _Nonnull stop) {
+//		[self.mainTableView registerClass:cell.class forCellReuseIdentifier:NSStringFromClass(cell.class)];
+//	}];
+}
 @end
