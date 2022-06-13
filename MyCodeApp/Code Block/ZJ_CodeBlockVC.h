@@ -8,13 +8,6 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-typedef NS_ENUM(NSUInteger, ZJ_ENUM_EG) {
-    ZJ_ENUM_EG_One = 1,
-    ZJ_ENUM_EG_Two,
-    ZJ_ENUM_EG_Three,
-    ZJ_ENUM_EG_Four
-};
-
 typedef void (^BlockName)(CGSize Size,NSString *str);
 @interface ZJ_CodeBlockVC : UIViewController
 
