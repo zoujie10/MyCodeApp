@@ -7,7 +7,7 @@
 
 #import "ZJ_CodeBlockViewController.h"
 
-@interface ZJ_CodeBlockViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface ZJ_CodeBlockViewController ()<UITableViewDelegate,UITableViewDataSource,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 @property (nonatomic,strong)UIButton *Btn;
 @property (nonatomic,strong)UILabel *Lbl;
 @property (nonatomic,strong)UIImageView *imageView;
@@ -69,6 +69,7 @@
 	}
 	return _imageView;
 }
+#pragma mark UITableView
 /**
  1. UITableViewStyleGrouped
  注意：去掉头部和中间间隔
@@ -127,5 +128,25 @@
 //	[ShowCell enumerateObjectsUsingBlock:^(UITableViewCell *cell, NSUInteger idx, BOOL * _Nonnull stop) {
 //		[self.mainTableView registerClass:cell.class forCellReuseIdentifier:NSStringFromClass(cell.class)];
 //	}];
+}
+#pragma  mark UICollectionView
+///UICollectionViewDelegate,UICollectionViewDelegateFlowLayout
+- (UICollectionView *)mainCollectionView{
+	if(!_mainCollectionView){
+		UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+		layout.itemSize = CGSizeMake(70, 70);
+		_mainCollectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
+		_mainCollectionView.alwaysBounceVertical = YES;
+		
+		_mainCollectionView.backgroundColor = WWRgbColor(250, 250, 250);
+		_mainCollectionView.contentInset = UIEdgeInsetsMake(10, 10, 10, 10);
+		_mainCollectionView.dataSource = self;
+		_mainCollectionView.delegate = self;
+		_mainCollectionView.scrollEnabled = NO;
+		_mainCollectionView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
+//		[_mainCollectionView registerClass:[WWBDViewImageCollectionCell class] forCellWithReuseIdentifier:@"Cell"];
+		_mainCollectionView.layer.cornerRadius = 4;
+	}
+	return _mainCollectionView;
 }
 @end
