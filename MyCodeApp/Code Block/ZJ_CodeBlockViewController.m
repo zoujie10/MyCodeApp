@@ -107,7 +107,7 @@
 		scrollView.contentInset = UIEdgeInsetsMake(-sectionHeaderHeight, 0, 0, 0);
 	}
 }
-- (UITableView *)_mainTableView{
+- (UITableView *)mainTableView{
 	if(!_mainTableView){
 		_mainTableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStyleGrouped];
 		_mainTableView.contentInset = UIEdgeInsetsMake(15, 0, 0, 0);
@@ -149,4 +149,5 @@
 	}
 	return _mainCollectionView;
 }
+
 @end
