@@ -43,6 +43,7 @@
 		8480F76E28561AD500F4303E /* ZJ_CodeBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480F76D28561AD500F4303E /* ZJ_CodeBlockViewController.m */; };
 		8480F774285B093100F4303E /* NSAttributedString+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480F773285B093100F4303E /* NSAttributedString+Custom.m */; };
 		8480F77A285B0D4200F4303E /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480F779285B0D4200F4303E /* UIButton+Extension.m */; };
+		8480F77D285C57D000F4303E /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480F77C285C57D000F4303E /* UIImage+Extension.m */; };
 		D6D44FB5BF7139F51513DE02 /* Pods_MyCodeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BF1EDAA16BF63F7EC3893A /* Pods_MyCodeApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -140,6 +141,8 @@
 		8480F773285B093100F4303E /* NSAttributedString+Custom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Custom.m"; sourceTree = "<group>"; };
 		8480F778285B0D4200F4303E /* UIButton+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
 		8480F779285B0D4200F4303E /* UIButton+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
+		8480F77B285C57D000F4303E /* UIImage+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		8480F77C285C57D000F4303E /* UIImage+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		8EB92B16F41CB5E109AE8B23 /* Pods-MyCodeApp-MyCodeAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCodeApp-MyCodeAppUITests.release.xcconfig"; path = "Target Support Files/Pods-MyCodeApp-MyCodeAppUITests/Pods-MyCodeApp-MyCodeAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		980395CCB5772613D38F931C /* Pods-MyCodeApp-MyCodeAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCodeApp-MyCodeAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MyCodeApp-MyCodeAppUITests/Pods-MyCodeApp-MyCodeAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9A6C240EA0E0248FFD598836 /* Pods-MyCodeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCodeAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MyCodeAppTests/Pods-MyCodeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -294,16 +297,18 @@
 			children = (
 				4FD20B5D261D68AB00381508 /* NSString+Extension.h */,
 				4FD20B5E261D68AB00381508 /* NSString+Extension.m */,
+				8480F772285B093100F4303E /* NSAttributedString+Custom.h */,
+				8480F773285B093100F4303E /* NSAttributedString+Custom.m */,
+				4FD20B67261D89C600381508 /* NSNumber+Extension.h */,
+				4FD20B68261D89C600381508 /* NSNumber+Extension.m */,
 				4FD20B60261D6A3000381508 /* NSArray+Extension.h */,
 				4FD20B61261D6A3000381508 /* NSArray+Extension.m */,
 				4FD20B63261D886C00381508 /* NSCharacterSet+Extension.h */,
 				4FD20B64261D886C00381508 /* NSCharacterSet+Extension.m */,
-				4FD20B67261D89C600381508 /* NSNumber+Extension.h */,
-				4FD20B68261D89C600381508 /* NSNumber+Extension.m */,
-				8480F772285B093100F4303E /* NSAttributedString+Custom.h */,
-				8480F773285B093100F4303E /* NSAttributedString+Custom.m */,
 				8480F778285B0D4200F4303E /* UIButton+Extension.h */,
 				8480F779285B0D4200F4303E /* UIButton+Extension.m */,
+				8480F77B285C57D000F4303E /* UIImage+Extension.h */,
+				8480F77C285C57D000F4303E /* UIImage+Extension.m */,
 			);
 			path = UIKitExtension;
 			sourceTree = "<group>";
@@ -656,6 +661,7 @@
 				4FD20B80261EE47F00381508 /* ZJUILabel.m in Sources */,
 				8480F73528523CDF00F4303E /* BRBaseView.m in Sources */,
 				4FCC721F26899A73006F725C /* ZJ_TimeDownVC.m in Sources */,
+				8480F77D285C57D000F4303E /* UIImage+Extension.m in Sources */,
 				4FD20B8F262001FA00381508 /* ThirdPartyDemoVC.m in Sources */,
 				8480F72F28523CDF00F4303E /* BRStringPickerView.m in Sources */,
 				4FD20B57261D522900381508 /* ZJ_MarcoHelper.m in Sources */,
