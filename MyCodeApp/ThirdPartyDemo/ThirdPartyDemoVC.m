@@ -17,7 +17,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor orangeColor];
 	ZJUILabel *label = [[ZJUILabel alloc]init];
 	[self.view addSubview:label];
@@ -25,8 +24,6 @@
 	label.setAttTextIcon(@"  测试链式语法",@"icon_tabbar_lab_selected",CGRectMake(0, -2, 12, 14))
 		.setUpTextColor(UIColor.blackColor);
 	label.frame = CGRectMake(100, 100, 200, 30);
-	
-	
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
