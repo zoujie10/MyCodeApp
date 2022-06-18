@@ -145,5 +145,70 @@
     [self setHighlighted:NO];
 }
 
+- (ZJUILabel *(^)(CGFloat r,
+				CGFloat g,
+				CGFloat b,
+				CGFloat a))setUpTextColorRGBA {
+	return ^(CGFloat r,
+			 CGFloat g,
+			 CGFloat b,
+			 CGFloat a) {
+		
+		r /= 255.0;
+		g /= 255.0;
+		b /= 255.0;
+		
+		UIColor *color = [UIColor colorWithRed:r
+										 green:g
+										  blue:b
+										 alpha:a];
+		return self.setUpTextColor(color);
+	};
+	
+}
+- (ZJUILabel *(^)(CGFloat r,
+				CGFloat g,
+				CGFloat b))setUpTextColorRGB {
+	return ^(CGFloat r,
+			 CGFloat g,
+			 CGFloat b) {
+		return self.setUpTextColorRGBA(r,g,b,1);
+	};
+}
+
+- (ZJUILabel *(^)(UIColor *color))setUpTextColor {
+	return ^(UIColor *color) {
+		self.textColor = color;
+		return self;
+	};
+}
+
+- (ZJUILabel *(^)(UIFont *font))fontSetUp {
+	return ^ (UIFont *font) {
+		self.font = font;
+		return self;
+	};
+}
+- (ZJUILabel *(^)(NSString *contentStr,NSString *iconName,CGRect iconRect))setAttTextIcon{
+	return ^ (NSString *contentStr,NSString *iconName,CGRect iconRect){
+		if(contentStr.length < 1) contentStr = @" ";
+		//创建富文本
+		NSAttributedString *str = [[NSAttributedString alloc]initWithString:contentStr];
+		NSMutableAttributedString *attri = [[NSMutableAttributedString alloc] initWithAttributedString:str];
+		//NSTextAttachment可以将要插入的图片作为特殊字符处理
+		NSTextAttachment *attch = [[NSTextAttachment alloc] init];
+		//定义图片内容及位置和大小
+		attch.image = [UIImage imageNamed:iconName];
+		attch.bounds = iconRect;
+		//创建带有图片的富文本
+		NSAttributedString *string = [NSAttributedString attributedStringWithAttachment:attch];
+		//将图片放在最后一位
+		//[attri appendAttributedString:string];
+		//将图片放在第一位
+		[attri insertAttributedString:string atIndex:0];
+		self.attributedText = attri;
+		return self;
+	};
+}
 
 @end

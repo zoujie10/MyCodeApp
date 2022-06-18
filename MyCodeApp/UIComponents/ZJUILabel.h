@@ -36,6 +36,23 @@ NS_ASSUME_NONNULL_BEGIN
 /// 点击了“复制”后的回调
 @property(nonatomic, copy) void (^didCopyBlock)(ZJUILabel *label, NSString *stringCopied);
 
+
+
+- (ZJUILabel *(^)(UIColor *color))setUpTextColor;
+
+/// textColor RGBA
+- (ZJUILabel *(^)(CGFloat r,
+				CGFloat g,
+				CGFloat b,
+				CGFloat a))setUpTextColorRGBA;
+/// textColor RGB
+- (ZJUILabel *(^)(CGFloat r,
+				CGFloat g,
+				CGFloat b))setUpTextColorRGB;
+#pragma mark - font
+
+- (ZJUILabel *(^)(UIFont *font))fontSetUp;
+- (ZJUILabel *(^)(NSString *contentStr,NSString *iconName,CGRect iconRect))setAttTextIcon;
 @end
 
 NS_ASSUME_NONNULL_END
