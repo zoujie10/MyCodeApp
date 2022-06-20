@@ -29,6 +29,7 @@
 		4FD20B8F262001FA00381508 /* ThirdPartyDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD20B8E262001FA00381508 /* ThirdPartyDemoVC.m */; };
 		755804D084A237FA9EB2B543 /* Pods_MyCodeApp_MyCodeAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EAE2FFCF9B9A5D7E049539D /* Pods_MyCodeApp_MyCodeAppUITests.framework */; };
 		793A16AAA9D5648B8B3235C0 /* Pods_MyCodeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6904B826A16EFF82FF6A5EB3 /* Pods_MyCodeAppTests.framework */; };
+		8400E606285F4BE400419E89 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8400E605285F4BE400419E89 /* UIColor+Extension.m */; };
 		8480F72E28523CDF00F4303E /* BRResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480F71428523CDF00F4303E /* BRResultModel.m */; };
 		8480F72F28523CDF00F4303E /* BRStringPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480F71728523CDF00F4303E /* BRStringPickerView.m */; };
 		8480F73028523CDF00F4303E /* BRDatePickerView+BR.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480F71A28523CDF00F4303E /* BRDatePickerView+BR.m */; };
@@ -115,6 +116,8 @@
 		5EAE2FFCF9B9A5D7E049539D /* Pods_MyCodeApp_MyCodeAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCodeApp_MyCodeAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6904B826A16EFF82FF6A5EB3 /* Pods_MyCodeAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCodeAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81BF1EDAA16BF63F7EC3893A /* Pods_MyCodeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCodeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8400E604285F4BE400419E89 /* UIColor+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		8400E605285F4BE400419E89 /* UIColor+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
 		8480F71428523CDF00F4303E /* BRResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRResultModel.m; sourceTree = "<group>"; };
 		8480F71528523CDF00F4303E /* BRStringPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRStringPickerView.h; sourceTree = "<group>"; };
 		8480F71628523CDF00F4303E /* BRResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRResultModel.h; sourceTree = "<group>"; };
@@ -324,6 +327,8 @@
 				8480F77C285C57D000F4303E /* UIImage+Extension.m */,
 				8480F77E285C57F400F4303E /* UITextField+Extension.h */,
 				8480F77F285C57F400F4303E /* UITextField+Extension.m */,
+				8400E604285F4BE400419E89 /* UIColor+Extension.h */,
+				8400E605285F4BE400419E89 /* UIColor+Extension.m */,
 			);
 			path = UIKitExtension;
 			sourceTree = "<group>";
@@ -664,6 +669,7 @@
 				8480F76E28561AD500F4303E /* ZJ_CodeBlockViewController.m in Sources */,
 				4FD20B69261D89C700381508 /* NSNumber+Extension.m in Sources */,
 				4FD20B5F261D68AB00381508 /* NSString+Extension.m in Sources */,
+				8400E606285F4BE400419E89 /* UIColor+Extension.m in Sources */,
 				4FD20B74261E9FED00381508 /* ZJ_CodeBlockVC.m in Sources */,
 				4FD20B08261C07BF00381508 /* AppDelegate.m in Sources */,
 				4FD20B19261C07C400381508 /* main.m in Sources */,
