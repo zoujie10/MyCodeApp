@@ -10,7 +10,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UITextField (Extension)
-
+/// 判断TextField输入是否包含表情符号
+-(BOOL)judgeTextContentIsContainEmoji;
 @end
 
 NS_ASSUME_NONNULL_END
