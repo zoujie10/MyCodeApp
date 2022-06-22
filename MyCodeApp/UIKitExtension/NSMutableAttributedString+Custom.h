@@ -10,6 +10,12 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NSMutableAttributedString (Custom)
++(NSMutableAttributedString *)set_attributeIntactString:(NSString *)intactStr
+										 IntactStrRBGColor:(UIColor *)intactStrColor
+										  IntactStrFont:(CGFloat)intactStrFont
+											andalterStr:(NSString *)alterStr
+											RBGColorStr:(UIColor *)colorStr
+												FontStr:(CGFloat)fontStr;
 /**
 	富文本加 + icon 图片
 */
