@@ -113,10 +113,10 @@
 #define  WWeakSelf __weak typeof(self) weakSelf = self
 
 //字符串判断为空
-#define WWIsString(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
+#define IsEmptyString(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
 
 //是否为空对象
-#define WWISNullObject(_object) (_object == nil \
+#define IsNullObject(_object) (_object == nil \
 || [_object isKindOfClass:[NSNull class]] \
 || ([_object respondsToSelector:@selector(length)] && [(NSData *)_object length] == 0) \
 || ([_object respondsToSelector:@selector(count)] && [(NSArray *)_object count] == 0))
