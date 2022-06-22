@@ -8,6 +8,22 @@
 #import "NSMutableAttributedString+Custom.h"
 
 @implementation NSMutableAttributedString (Custom)
++(NSMutableAttributedString *)set_attributeIntactString:(NSString *)intactStr
+										 IntactStrRBGColor:(UIColor *)intactStrColor
+										  IntactStrFont:(CGFloat)intactStrFont
+											andalterStr:(NSString *)alterStr
+											RBGColorStr:(UIColor *)colorStr
+												FontStr:(CGFloat)fontStr{
+	
+	NSMutableAttributedString *attring = [[NSMutableAttributedString alloc] initWithString:
+										  [NSString stringWithFormat:@"%@",intactStr]
+																				attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:intactStrFont],NSForegroundColorAttributeName: intactStrColor}];
+	NSRange range = [intactStr rangeOfString:alterStr];
+	[attring addAttribute:NSForegroundColorAttributeName value:colorStr range:range];
+	[attring addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:fontStr] range:range];
+	return attring;
+}
+
 +(NSMutableAttributedString *)set_attributeText:(NSAttributedString *)attStr
 										withPic:(NSString *)picName
 								  withAttchRect:(CGRect)rect{
