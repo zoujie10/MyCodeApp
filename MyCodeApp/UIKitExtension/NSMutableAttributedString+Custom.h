@@ -10,6 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NSMutableAttributedString (Custom)
+//完整的字符串 颜色 字体 其中需要改变的字符串 颜色 字体大小
 +(NSMutableAttributedString *)set_attributeIntactString:(NSString *)intactStr
 										 IntactStrRBGColor:(UIColor *)intactStrColor
 										  IntactStrFont:(CGFloat)intactStrFont
