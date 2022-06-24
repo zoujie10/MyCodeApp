@@ -19,7 +19,6 @@
 }
 
 /**
-tableview Cell
  WWBDNormalDetailTitleCell
  WWBDNormalDetailTitleAndContentCell
  WWBDNormalDetailCollectionViewCell
