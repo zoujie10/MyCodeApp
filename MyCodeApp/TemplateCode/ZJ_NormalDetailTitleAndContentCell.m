@@ -5,9 +5,9 @@
 //  Created by Zoujie on 2022/6/25.
 //
 
-#import "NormalDetailTitleAndContentCell.h"
+#import "ZJ_NormalDetailTitleAndContentCell.h"
 
-@implementation NormalDetailTitleAndContentCell
+@implementation ZJ_NormalDetailTitleAndContentCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

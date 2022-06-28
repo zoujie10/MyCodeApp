@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NormalDetailTitleAndContentCell : UITableViewCell
+@interface ZJ_NormalDetailTitleAndContentCell : UITableViewCell
 
 @end
 
