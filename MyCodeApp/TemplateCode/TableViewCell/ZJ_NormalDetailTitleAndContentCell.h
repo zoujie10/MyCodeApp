@@ -10,7 +10,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZJ_NormalDetailTitleAndContentCell : UITableViewCell
-
+@property (nonatomic,strong)UILabel *titleLabel;
+@property (nonatomic,strong)UILabel *valueLabel;
 @end
 
 NS_ASSUME_NONNULL_END
