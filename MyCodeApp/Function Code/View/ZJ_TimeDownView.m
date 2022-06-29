@@ -128,7 +128,7 @@ static CGFloat const JIANJU = 10.f;
     if (timeout<0) {
         return;
     }
-    WWeakSelf;
+    WeakSelf;
     if (timeout!=0) {
         dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
         _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0,queue);
@@ -183,7 +183,7 @@ static CGFloat const JIANJU = 10.f;
 - (void)defaultSettingTime{
     
     [self destroyTimer];
-    WWeakSelf;
+    WeakSelf;
     dispatch_async(dispatch_get_main_queue(), ^{
     
         if (weakSelf.timeDownType == TimeDownTypeText) {

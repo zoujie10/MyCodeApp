@@ -24,15 +24,14 @@
 	[self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
 		make.left.mas_equalTo(self.contentView.mas_left).offset(15);
 		make.centerY.equalTo(self.contentView);
-//        make.width.mas_equalTo(100);
 	}];
 }
 #pragma mark
 - (UILabel *)titleLabel{
 	if(!_titleLabel){
 		_titleLabel = [[UILabel alloc]init];
-//		_titleLabel.font = WWFONTBOLD(14);
-//		_titleLabel.textColor = WWRgbColorA(52, 52, 52, 1);
+		_titleLabel.font = ZJFONTBOLD(14);
+		_titleLabel.textColor = ZJRgbColorA(52, 52, 52, 1);
 		_titleLabel.textAlignment = NSTextAlignmentLeft;
 	}
 	return _titleLabel;

@@ -115,7 +115,7 @@
 		_mainTableView.dataSource = self;
 		_mainTableView.showsVerticalScrollIndicator = NO;
 		_mainTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-		_mainTableView.backgroundColor = WWRgbColor(247, 247, 247);
+		_mainTableView.backgroundColor = ZJRgbColor(247, 247, 247);
 	}
 	return _mainTableView;
 }
@@ -138,7 +138,7 @@
 		_mainCollectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
 		_mainCollectionView.alwaysBounceVertical = YES;
 		
-		_mainCollectionView.backgroundColor = WWRgbColor(250, 250, 250);
+		_mainCollectionView.backgroundColor = ZJRgbColor(250, 250, 250);
 		_mainCollectionView.contentInset = UIEdgeInsetsMake(10, 10, 10, 10);
 		_mainCollectionView.dataSource = self;
 		_mainCollectionView.delegate = self;

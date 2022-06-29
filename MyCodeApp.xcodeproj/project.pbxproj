@@ -56,6 +56,7 @@
 		84EEB4A52866A03E009254E2 /* ZJ_NormalDetailTitleAndContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEB4A42866A03E009254E2 /* ZJ_NormalDetailTitleAndContentCell.m */; };
 		84EEB4A82866A054009254E2 /* ZJ_NormalDetailCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEB4A72866A054009254E2 /* ZJ_NormalDetailCollectionViewCell.m */; };
 		84EEB4AB2866A065009254E2 /* ZJ_NormalDetailTitleAndTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEB4AA2866A065009254E2 /* ZJ_NormalDetailTitleAndTextViewCell.m */; };
+		84EEB4C2286B2082009254E2 /* ZJ_TemplateCodeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEB4C1286B2082009254E2 /* ZJ_TemplateCodeViewModel.m */; };
 		D6D44FB5BF7139F51513DE02 /* Pods_MyCodeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BF1EDAA16BF63F7EC3893A /* Pods_MyCodeApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -179,6 +180,8 @@
 		84EEB4A72866A054009254E2 /* ZJ_NormalDetailCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJ_NormalDetailCollectionViewCell.m; sourceTree = "<group>"; };
 		84EEB4A92866A065009254E2 /* ZJ_NormalDetailTitleAndTextViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJ_NormalDetailTitleAndTextViewCell.h; sourceTree = "<group>"; };
 		84EEB4AA2866A065009254E2 /* ZJ_NormalDetailTitleAndTextViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJ_NormalDetailTitleAndTextViewCell.m; sourceTree = "<group>"; };
+		84EEB4C0286B2082009254E2 /* ZJ_TemplateCodeViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJ_TemplateCodeViewModel.h; sourceTree = "<group>"; };
+		84EEB4C1286B2082009254E2 /* ZJ_TemplateCodeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJ_TemplateCodeViewModel.m; sourceTree = "<group>"; };
 		8EB92B16F41CB5E109AE8B23 /* Pods-MyCodeApp-MyCodeAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCodeApp-MyCodeAppUITests.release.xcconfig"; path = "Target Support Files/Pods-MyCodeApp-MyCodeAppUITests/Pods-MyCodeApp-MyCodeAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		980395CCB5772613D38F931C /* Pods-MyCodeApp-MyCodeAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCodeApp-MyCodeAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MyCodeApp-MyCodeAppUITests/Pods-MyCodeApp-MyCodeAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9A6C240EA0E0248FFD598836 /* Pods-MyCodeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCodeAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MyCodeAppTests/Pods-MyCodeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -466,8 +469,34 @@
 		84EEB49C2865E932009254E2 /* TemplateCode */ = {
 			isa = PBXGroup;
 			children = (
+				84EEB4BF286B2056009254E2 /* TableViewCell */,
+				84EEB4BE286B2051009254E2 /* VC */,
+				84EEB4BD286B2046009254E2 /* ViewModel */,
 				84EEB49D2865E94E009254E2 /* ZJ_TemplateCodeVC.h */,
 				84EEB49E2865E94E009254E2 /* ZJ_TemplateCodeVC.m */,
+			);
+			path = TemplateCode;
+			sourceTree = "<group>";
+		};
+		84EEB4BD286B2046009254E2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84EEB4C0286B2082009254E2 /* ZJ_TemplateCodeViewModel.h */,
+				84EEB4C1286B2082009254E2 /* ZJ_TemplateCodeViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		84EEB4BE286B2051009254E2 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		84EEB4BF286B2056009254E2 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
 				84EEB4A02866A01E009254E2 /* ZJ_NormalDetailTitleCell.h */,
 				84EEB4A12866A01E009254E2 /* ZJ_NormalDetailTitleCell.m */,
 				84EEB4A32866A03E009254E2 /* ZJ_NormalDetailTitleAndContentCell.h */,
@@ -477,7 +506,7 @@
 				84EEB4A92866A065009254E2 /* ZJ_NormalDetailTitleAndTextViewCell.h */,
 				84EEB4AA2866A065009254E2 /* ZJ_NormalDetailTitleAndTextViewCell.m */,
 			);
-			path = TemplateCode;
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		D0F98B4DAD31435882207F5D /* Pods */ = {
@@ -732,6 +761,7 @@
 				84EEB49F2865E94E009254E2 /* ZJ_TemplateCodeVC.m in Sources */,
 				8480F774285B093100F4303E /* NSAttributedString+Custom.m in Sources */,
 				8480F73028523CDF00F4303E /* BRDatePickerView+BR.m in Sources */,
+				84EEB4C2286B2082009254E2 /* ZJ_TemplateCodeViewModel.m in Sources */,
 				4FD20B80261EE47F00381508 /* ZJUILabel.m in Sources */,
 				8480F73528523CDF00F4303E /* BRBaseView.m in Sources */,
 				4FCC721F26899A73006F725C /* ZJ_TimeDownVC.m in Sources */,

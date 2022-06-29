@@ -106,11 +106,23 @@
 
 
 /// 颜色
-#define WWRgbColor(r, g, b)       [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
-#define WWRgbColorA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+#define ZJRgbColor(r, g, b)       [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
+#define ZJRgbColorA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
+// 主题字体，方正描五
+#define THEMEFONT(FONTSIZE)    WWFONT(kTudeThemFont,FONTSIZE)
+
+// 字体大小(常规/粗体)
+#define ZJFONT(NAME, FONTSIZE)    [UIFont fontWithName:(NAME) size:(FONTSIZE)]
+
+//系统字体 粗
+#define ZJFONTBOLD(FONTSIZE)      [UIFont boldSystemFontOfSize:FONTSIZE]
+
+//系统字体 常规
+#define ZJFONTNORMAL(FONTSIZE)    [UIFont systemFontOfSize:FONTSIZE]
 
 //弱引用
-#define  WWeakSelf __weak typeof(self) weakSelf = self
+#define  WeakSelf __weak typeof(self) weakSelf = self
 
 //字符串判断为空
 #define IsEmptyString(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
