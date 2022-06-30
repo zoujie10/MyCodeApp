@@ -9,8 +9,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZJ_NormalDetailCollectionViewCell : UITableViewCell
+@interface ZJ_NormalDetailCollectionCell : UICollectionViewCell
+@property (nonatomic,strong)UILabel *topLabel;
+@property (nonatomic,strong)UILabel *bottomLabel;
+@property (nonatomic,strong)UILabel *bottomSubLabel;
+@end
 
+@interface ZJ_NormalDetailCollectionViewCell : UITableViewCell
+@property (nonatomic,strong)NSArray *dataArray;
+@property (nonatomic,strong)UIView *bgView;
 @end
 
 NS_ASSUME_NONNULL_END

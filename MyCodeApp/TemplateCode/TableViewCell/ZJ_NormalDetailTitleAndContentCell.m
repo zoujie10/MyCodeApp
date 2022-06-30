@@ -35,7 +35,7 @@
 	if(!_titleLabel){
 		_titleLabel = [[UILabel alloc]init];
 		_titleLabel.font = [UIFont systemFontOfSize:14 weight:UIFontWeightMedium];
-		_titleLabel.textColor = WWRgbColorA(52, 52, 52, 1);
+//		_titleLabel.textColor = UIColor(52, 52, 52, 1);
 		_titleLabel.textAlignment = NSTextAlignmentLeft;
 	}
 	return _titleLabel;
@@ -43,7 +43,7 @@
 - (UILabel *)valueLabel{
 	if(!_valueLabel){
 		_valueLabel = [[UILabel alloc]init];
-		_valueLabel.font = WWFONTBOLD(14);
+//		_valueLabel.font = WWFONTBOLD(14);
 		_valueLabel.textColor = UIColor.blackColor;
 		_valueLabel.textAlignment = NSTextAlignmentRight;
 		_valueLabel.numberOfLines = 0;
