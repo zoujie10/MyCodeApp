@@ -28,6 +28,8 @@
 	[self.contentView addSubview:self.topLabel];
 	[self.contentView addSubview:self.bottomLabel];
 	[self.contentView addSubview:self.bottomSubLabel];
+	[self.contentView addSubview:self.picImageView];
+	
 	[self.topLabel mas_makeConstraints:^(MASConstraintMaker *make) {
 		make.left.mas_equalTo(self.contentView).offset(36);
 		make.top.mas_equalTo(self.contentView).offset(20);
@@ -41,6 +43,10 @@
 	[self.bottomSubLabel mas_makeConstraints:^(MASConstraintMaker *make) {
 		make.left.equalTo(self.bottomLabel.mas_right).offset(8);
 		make.baseline.mas_equalTo(self.bottomLabel.mas_baseline);
+	}];
+	
+	[self.picImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+		make.edges.equalTo(self.contentView);
 	}];
 }
 - (UILabel *)topLabel{
@@ -78,6 +84,15 @@
 //		_bottomSubLabel.font = WWFONTBOLD(12);
 	}
 	return _bottomSubLabel;
+}
+- (UIImageView *)picImageView{
+	if(!_picImageView){
+		_picImageView = [[UIImageView alloc] init];
+		_picImageView.backgroundColor = [UIColor colorWithWhite:1.000 alpha:0.500];
+		_picImageView.contentMode = UIViewContentModeScaleAspectFill;
+		_picImageView.userInteractionEnabled = YES;
+	}
+	return _picImageView;
 }
 @end
 

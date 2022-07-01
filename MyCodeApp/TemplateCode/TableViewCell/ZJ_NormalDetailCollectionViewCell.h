@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,strong)UILabel *topLabel;
 @property (nonatomic,strong)UILabel *bottomLabel;
 @property (nonatomic,strong)UILabel *bottomSubLabel;
+@property (nonatomic,strong)UIImageView *picImageView;
 @end
 
 @interface ZJ_NormalDetailCollectionViewCell : UITableViewCell
