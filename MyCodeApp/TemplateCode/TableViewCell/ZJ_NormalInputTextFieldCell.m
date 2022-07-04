@@ -1,15 +1,15 @@
 //
-//  ZJ_NormalInpitTextFieldCell.m
+//  ZJ_NormalInputTextFieldCell.m
 //  MyCodeApp
 //
 //  Created by Zoujie on 2022/7/2.
 //
 
-#import "ZJ_NormalInpitTextFieldCell.h"
-@interface ZJ_NormalInpitTextFieldCell()<UITextViewDelegate>
+#import "ZJ_NormalInputTextFieldCell.h"
+@interface ZJ_NormalInputTextFieldCell()<UITextViewDelegate>
 @property (nonatomic,strong)UILabel *placeHolderLabel;
 @end
-@implementation ZJ_NormalInpitTextFieldCell
+@implementation ZJ_NormalInputTextFieldCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
 	self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];

@@ -1,5 +1,5 @@
 //
-//  ZJ_NormalInpitTextFieldCell.h
+//  ZJ_NormalInputTextFieldCell.h
 //  MyCodeApp
 //
 //  Created by Zoujie on 2022/7/2.
@@ -16,7 +16,7 @@ typedef NS_ENUM (NSUInteger, Select_TextField_Type) {
 	Select_TextField_Type_Fifth//!<
 };
 typedef void(^TextInput_Done_Block)(Select_TextField_Type textField_Type,NSString * contentStr);
-@interface ZJ_NormalInpitTextFieldCell : UITableViewCell
+@interface ZJ_NormalInputTextFieldCell : UITableViewCell
 @property (nonatomic,strong)UITextView *inputTextField;
 @property (nonatomic,strong)UILabel *rightLabel;
 @property (nonatomic,assign)Select_TextField_Type textField_type;
