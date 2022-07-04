@@ -35,7 +35,7 @@
 - (UILabel *)titleLabel{
 	if(!_titleLabel){
 		_titleLabel = [[UILabel alloc]init];
-		_titleLabel.font = WWFONTBOLD(15);
+//		_titleLabel.font = WWFONTBOLD(15);
 		_titleLabel.textColor = UIColor.blackColor;
 		_titleLabel.textAlignment = NSTextAlignmentLeft;
 		_titleLabel.numberOfLines = 0;
