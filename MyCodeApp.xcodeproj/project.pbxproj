@@ -496,6 +496,7 @@
 				84EEB4D12872DAB2009254E2 /* ZJ_Custom_WorkFlow.m */,
 				84EEB4C6286ECFBE009254E2 /* TableViewHeadFooterView */,
 				84EEB4BF286B2056009254E2 /* TableViewCell */,
+				84EEB50028770A72009254E2 /* View */,
 				84EEB4BE286B2051009254E2 /* VC */,
 				84EEB4BD286B2046009254E2 /* ViewModel */,
 			);
@@ -550,6 +551,13 @@
 				84EEB4C8286ECFF1009254E2 /* ZJ_TemplateHeaderView.m */,
 			);
 			path = TableViewHeadFooterView;
+			sourceTree = "<group>";
+		};
+		84EEB50028770A72009254E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D0F98B4DAD31435882207F5D /* Pods */ = {
