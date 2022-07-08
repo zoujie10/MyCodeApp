@@ -7,7 +7,7 @@
 
 #import "ZJ_TwoTabelviewTemplateSubVC.h"
 
-@interface ZJ_TwoTabelviewTemplateSubVC ()
+@interface ZJ_TwoTabelviewTemplateSubVC ()<UITableViewDataSource,UITableViewDelegate>
 @property(nonatomic, strong)UITableView *rightTableView;
 @property(nonatomic, strong)UITableView *leftTableView;
 @end
