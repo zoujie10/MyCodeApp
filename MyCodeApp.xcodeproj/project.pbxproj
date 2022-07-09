@@ -515,12 +515,11 @@
 		84EEB4BE286B2051009254E2 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				84EEB507287982B6009254E2 /* LeftAndRightListVC */,
 				84EEB49D2865E94E009254E2 /* ZJ_TemplateCodeVC.h */,
 				84EEB49E2865E94E009254E2 /* ZJ_TemplateCodeVC.m */,
 				84EEB4D32874227C009254E2 /* ZJ_TwoTabelviewTemplateVC.h */,
 				84EEB4D42874227C009254E2 /* ZJ_TwoTabelviewTemplateVC.m */,
-				84EEB4D628742478009254E2 /* ZJ_TwoTabelviewTemplateSubVC.h */,
-				84EEB4D728742478009254E2 /* ZJ_TwoTabelviewTemplateSubVC.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -558,6 +557,15 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		84EEB507287982B6009254E2 /* LeftAndRightListVC */ = {
+			isa = PBXGroup;
+			children = (
+				84EEB4D628742478009254E2 /* ZJ_TwoTabelviewTemplateSubVC.h */,
+				84EEB4D728742478009254E2 /* ZJ_TwoTabelviewTemplateSubVC.m */,
+			);
+			path = LeftAndRightListVC;
 			sourceTree = "<group>";
 		};
 		D0F98B4DAD31435882207F5D /* Pods */ = {
