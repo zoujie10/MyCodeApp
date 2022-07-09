@@ -6,6 +6,7 @@
 //
 
 #import "ZJ_TwoTabelviewTemplateSubVC.h"
+#import "ZJ_NormalDetailTitleCell.h"
 
 @interface ZJ_TwoTabelviewTemplateSubVC ()<UITableViewDataSource,UITableViewDelegate>
 @property(nonatomic, strong)UITableView *rightTableView;
@@ -20,14 +21,9 @@
 }
 #pragma mark makeUI
 -(void)creatUI{
-//	[self.view addSubview:self.searchTitleView];
 	[self.view addSubview:self.leftTableView];
 	[self.view addSubview:self.rightTableView];
 	
-//	[self.searchTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
-//		make.left.top.right.equalTo(self.view);
-//		make.height.mas_equalTo(55);
-//	}];
 	
 	[self.leftTableView mas_makeConstraints:^(MASConstraintMaker *make) {
 		make.top.equalTo(self.view).offset(5);
@@ -69,14 +65,13 @@
 	return num;
 }
 
-//-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//	if (tableView == self.leftTableView) {
-//		WWBDSecondPageLeftCell *leftCell =
-//		[tableView dequeueReusableCellWithIdentifier:@"leftCell"
-//										forIndexPath:indexPath];
-//		leftCell.selectionStyle = UITableViewCellSelectionStyleNone;
-//
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+	if (tableView == self.leftTableView) {
+		ZJ_NormalDetailTitleCell *leftCell =
+		[tableView dequeueReusableCellWithIdentifier:@"leftCell"
+										forIndexPath:indexPath];
+		leftCell.selectionStyle = UITableViewCellSelectionStyleNone;
+
 //		leftCell.titleLabel.text = [self.leftTagViewModel ww_getTitleFor:indexPath];
 //		if ([self.leftTagViewModel ww_getIsSelectCell:indexPath]) {
 //			leftCell.titleLabel.textColor = [UIColor colorWithRed:252/255.0
@@ -92,11 +87,11 @@
 //			leftCell.lineView.hidden = YES;
 //			leftCell.titleLabel.font = [UIFont boldSystemFontOfSize:12];
 //		}
-//		return leftCell;
-//
-//	}else{
-//
-//		WWBDSecondPageReportsContentCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(WWBDSecondPageReportsContentCell.class) forIndexPath:indexPath];
+		return leftCell;
+
+	}else{
+
+		ZJ_NormalDetailTitleCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(ZJ_NormalDetailTitleCell.class) forIndexPath:indexPath];
 //		cell.label.text = [self.rightDetailListViewModel ww_getPDFTitleFor:indexPath];
 //		NSString *url = [self.rightDetailListViewModel ww_getPDFAttachmentUrlFor:indexPath];
 //		cell.downloadButton.hidden = !(url != nil && url.length > 0);
@@ -111,9 +106,9 @@
 //				[weakSelf showTipWithMessage:message];
 //			}];
 //		};
-//		return cell;
-//	}
-//}
+		return cell;
+	}
+}
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	return 56;
