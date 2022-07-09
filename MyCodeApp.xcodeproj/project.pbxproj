@@ -562,10 +562,18 @@
 		84EEB507287982B6009254E2 /* LeftAndRightListVC */ = {
 			isa = PBXGroup;
 			children = (
+				84EEB5082879834E009254E2 /* View */,
 				84EEB4D628742478009254E2 /* ZJ_TwoTabelviewTemplateSubVC.h */,
 				84EEB4D728742478009254E2 /* ZJ_TwoTabelviewTemplateSubVC.m */,
 			);
 			path = LeftAndRightListVC;
+			sourceTree = "<group>";
+		};
+		84EEB5082879834E009254E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D0F98B4DAD31435882207F5D /* Pods */ = {
