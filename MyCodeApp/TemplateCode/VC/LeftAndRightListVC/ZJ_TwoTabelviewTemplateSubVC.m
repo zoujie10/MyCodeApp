@@ -6,7 +6,8 @@
 //
 
 #import "ZJ_TwoTabelviewTemplateSubVC.h"
-#import "ZJ_NormalDetailTitleCell.h"
+#import "ZJ_LeftTableViewCell.h"
+#import "ZJ_RightTableViewCell.h"
 
 @interface ZJ_TwoTabelviewTemplateSubVC ()<UITableViewDataSource,UITableViewDelegate>
 @property(nonatomic, strong)UITableView *rightTableView;
@@ -67,7 +68,7 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 	if (tableView == self.leftTableView) {
-		ZJ_NormalDetailTitleCell *leftCell =
+		ZJ_LeftTableViewCell *leftCell =
 		[tableView dequeueReusableCellWithIdentifier:@"leftCell"
 										forIndexPath:indexPath];
 		leftCell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -91,7 +92,7 @@
 
 	}else{
 
-		ZJ_NormalDetailTitleCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(ZJ_NormalDetailTitleCell.class) forIndexPath:indexPath];
+		ZJ_RightTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(ZJ_RightTableViewCell.class) forIndexPath:indexPath];
 //		cell.label.text = [self.rightDetailListViewModel ww_getPDFTitleFor:indexPath];
 //		NSString *url = [self.rightDetailListViewModel ww_getPDFAttachmentUrlFor:indexPath];
 //		cell.downloadButton.hidden = !(url != nil && url.length > 0);
@@ -149,8 +150,8 @@
 		_leftTableView.dataSource = self;
 		_leftTableView.showsVerticalScrollIndicator = NO;
 		_leftTableView.bounces = YES;
-//		[_leftTableView registerClass:[WWBDSecondPageLeftCell class]
-//			   forCellReuseIdentifier:@"leftCell"];
+		[_leftTableView registerClass:[ZJ_LeftTableViewCell class]
+			   forCellReuseIdentifier:@"leftCell"];
 //		_leftTableView.backgroundColor = [UIColor colorWithHexStringMethod:@"f7f7f7"];
 		_leftTableView.tableFooterView = [UIView new];
 //		_leftTableView.separatorColor = [UIColor colorWithHexStringMethod:@"#E4E8ED"];
@@ -175,8 +176,8 @@
 		_rightTableView.dataSource = self;
 		_rightTableView.showsVerticalScrollIndicator = NO;
 		_rightTableView.bounces = YES;
-//		[_rightTableView registerClass:[WWBDSecondPageReportsContentCell class]
-//				forCellReuseIdentifier:NSStringFromClass(WWBDSecondPageReportsContentCell.class)];
+		[_rightTableView registerClass:[ZJ_RightTableViewCell class]
+				forCellReuseIdentifier:NSStringFromClass(ZJ_RightTableViewCell.class)];
 		_rightTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 		_rightTableView.backgroundColor = [UIColor whiteColor];
 		_rightTableView.tableFooterView = [UIView new];
