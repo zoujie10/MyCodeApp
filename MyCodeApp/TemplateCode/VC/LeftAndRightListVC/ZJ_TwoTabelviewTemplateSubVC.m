@@ -155,15 +155,13 @@
 //		_leftTableView.backgroundColor = [UIColor colorWithHexStringMethod:@"f7f7f7"];
 		_leftTableView.tableFooterView = [UIView new];
 //		_leftTableView.separatorColor = [UIColor colorWithHexStringMethod:@"#E4E8ED"];
-		if (@available(iOS 11.0, *)) {
-			_leftTableView.estimatedRowHeight = 0;//iOS11后会预估高度 contensize等于estimatedRowHeight（默认44）*cell数量，导致进入页面马上又跳转时会保留计算不准确的contentsize
-			_leftTableView.estimatedSectionFooterHeight = 0;
-			_leftTableView.estimatedSectionHeaderHeight = 0;
-			// 作用于指定的UIScrollView
-			_leftTableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-		} else {
-			self.automaticallyAdjustsScrollViewInsets = NO;
-		}
+		
+		_leftTableView.estimatedRowHeight = 0;//iOS11后会预估高度 contensize等于estimatedRowHeight（默认44）*cell数量，导致进入页面马上又跳转时会保留计算不准确的contentsize
+		_leftTableView.estimatedSectionFooterHeight = 0;
+		_leftTableView.estimatedSectionHeaderHeight = 0;
+		// 作用于指定的UIScrollView
+		_leftTableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+		
 	}
 	return _leftTableView;
 }
