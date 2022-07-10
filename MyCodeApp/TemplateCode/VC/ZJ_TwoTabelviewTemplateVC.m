@@ -6,7 +6,7 @@
 //
 
 #import "ZJ_TwoTabelviewTemplateVC.h"
-#import "ZJ_TwoTabelviewTemplateSubVC.h"
+
 static CGFloat topGapHeight = 10;//导航栏下方留白空隙
 static NSString *cellId = @"CellSubScrollView";
 
@@ -14,7 +14,6 @@ static NSString *cellId = @"CellSubScrollView";
 ///主tableView
 @property(nonatomic,strong) UITableView *mainTableView;
 
-@property(nonatomic,strong) ZJ_TwoTabelviewTemplateSubVC *subListView;
 @end
 
 @implementation ZJ_TwoTabelviewTemplateVC
@@ -61,7 +60,7 @@ static NSString *cellId = @"CellSubScrollView";
 		  cell =
 		  [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
 								 reuseIdentifier:cellId];
-		  [cell.contentView addSubview:self.subListView.view];
+//		  [cell.contentView addSubview:self.subListView.view];
 		  cell.backgroundColor = [UIColor whiteColor];
 		  cell.selectionStyle = UITableViewCellSelectionStyleNone;
 	 }
@@ -71,8 +70,8 @@ static NSString *cellId = @"CellSubScrollView";
  UITableViewDelegate
  */
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-	CGFloat rowHeight = self.subListView.view.bounds.size.height;
-	return rowHeight;
+	
+	return 10;
 }
 
 #pragma mark lazyload
@@ -91,13 +90,4 @@ static NSString *cellId = @"CellSubScrollView";
 }
 
 
-
-- (ZJ_TwoTabelviewTemplateSubVC *)subListView{
-	if(!_subListView){
-		_subListView = [[ZJ_TwoTabelviewTemplateSubVC alloc] init];
-		[self addChildViewController:_subListView];
-		_subListView.view.backgroundColor = [UIColor whiteColor];
-	}
-	return _subListView;
-}
 @end
