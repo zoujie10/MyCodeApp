@@ -180,14 +180,10 @@
 		_rightTableView.backgroundColor = [UIColor whiteColor];
 		_rightTableView.tableFooterView = [UIView new];
 		
-		if (@available(iOS 11.0, *)) {
-			_rightTableView.estimatedRowHeight = 0;//iOS11后会预估高度 contensize等于estimatedRowHeight（默认44）*cell数量，导致进入页面马上又跳转时会保留计算不准确的contentsize
-			_rightTableView.estimatedSectionFooterHeight = 0;
-			_rightTableView.estimatedSectionHeaderHeight = 0;
-			_rightTableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-		} else {
-			self.automaticallyAdjustsScrollViewInsets = NO;
-		}
+		_rightTableView.estimatedRowHeight = 0;//iOS11后会预估高度 contensize等于estimatedRowHeight（默认44）*cell数量，导致进入页面马上又跳转时会保留计算不准确的contentsize
+		_rightTableView.estimatedSectionFooterHeight = 0;
+		_rightTableView.estimatedSectionHeaderHeight = 0;
+		_rightTableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
 	}
 	return _rightTableView;
 }

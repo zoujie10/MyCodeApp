@@ -161,7 +161,7 @@
 - (UIView *)saleOutBackView {
 	if (!_saleOutBackView) {
 		_saleOutBackView = [[UIView alloc] init];
-//		_saleOutBackView.backgroundColor = WWRgbColorA(255, 255, 255, 0.6);
+		_saleOutBackView.backgroundColor = ZJRgbColorA(255, 255, 255, 0.6);
 		_saleOutBackView.hidden = YES;
 	}
 	return _saleOutBackView;
@@ -176,7 +176,7 @@
 		_saleOutLabel.font = [UIFont boldSystemFontOfSize:12];
 		_saleOutLabel.textAlignment = NSTextAlignmentCenter;
 		_saleOutLabel.textColor = [UIColor whiteColor];
-//		_saleOutLabel.backgroundColor = WWRgbColorA(0, 0, 0, 0.6);
+		_saleOutLabel.backgroundColor = ZJRgbColorA(0, 0, 0, 0.6);
 	}
 	return _saleOutLabel;
 }
