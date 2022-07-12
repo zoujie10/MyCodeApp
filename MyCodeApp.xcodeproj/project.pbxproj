@@ -68,6 +68,7 @@
 		84EEB50E287984D4009254E2 /* ZJ_RightTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEB50D287984D4009254E2 /* ZJ_RightTableViewCell.m */; };
 		84EEB524287DAF2A009254E2 /* ZJ_DataArrayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEB523287DAF2A009254E2 /* ZJ_DataArrayModel.m */; };
 		84EEB527287DAF60009254E2 /* ZJ_DataDicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEB526287DAF60009254E2 /* ZJ_DataDicModel.m */; };
+		84EEB52A287DB2F9009254E2 /* ZJ_DataStrModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEB529287DB2F9009254E2 /* ZJ_DataStrModel.m */; };
 		D6D44FB5BF7139F51513DE02 /* Pods_MyCodeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BF1EDAA16BF63F7EC3893A /* Pods_MyCodeApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -215,6 +216,8 @@
 		84EEB523287DAF2A009254E2 /* ZJ_DataArrayModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJ_DataArrayModel.m; sourceTree = "<group>"; };
 		84EEB525287DAF60009254E2 /* ZJ_DataDicModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJ_DataDicModel.h; sourceTree = "<group>"; };
 		84EEB526287DAF60009254E2 /* ZJ_DataDicModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJ_DataDicModel.m; sourceTree = "<group>"; };
+		84EEB528287DB2F9009254E2 /* ZJ_DataStrModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJ_DataStrModel.h; sourceTree = "<group>"; };
+		84EEB529287DB2F9009254E2 /* ZJ_DataStrModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJ_DataStrModel.m; sourceTree = "<group>"; };
 		8EB92B16F41CB5E109AE8B23 /* Pods-MyCodeApp-MyCodeAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCodeApp-MyCodeAppUITests.release.xcconfig"; path = "Target Support Files/Pods-MyCodeApp-MyCodeAppUITests/Pods-MyCodeApp-MyCodeAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		980395CCB5772613D38F931C /* Pods-MyCodeApp-MyCodeAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCodeApp-MyCodeAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MyCodeApp-MyCodeAppUITests/Pods-MyCodeApp-MyCodeAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9A6C240EA0E0248FFD598836 /* Pods-MyCodeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCodeAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MyCodeAppTests/Pods-MyCodeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -600,6 +603,8 @@
 				84EEB523287DAF2A009254E2 /* ZJ_DataArrayModel.m */,
 				84EEB525287DAF60009254E2 /* ZJ_DataDicModel.h */,
 				84EEB526287DAF60009254E2 /* ZJ_DataDicModel.m */,
+				84EEB528287DB2F9009254E2 /* ZJ_DataStrModel.h */,
+				84EEB529287DB2F9009254E2 /* ZJ_DataStrModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -872,6 +877,7 @@
 				4FD20B8F262001FA00381508 /* ThirdPartyDemoVC.m in Sources */,
 				84EEB4D22872DAB2009254E2 /* ZJ_Custom_WorkFlow.m in Sources */,
 				84EEB50B287983D8009254E2 /* ZJ_LeftTableViewCell.m in Sources */,
+				84EEB52A287DB2F9009254E2 /* ZJ_DataStrModel.m in Sources */,
 				8480F72F28523CDF00F4303E /* BRStringPickerView.m in Sources */,
 				4FD20B57261D522900381508 /* ZJ_MarcoHelper.m in Sources */,
 				8480F73228523CDF00F4303E /* BRDatePickerView.m in Sources */,
