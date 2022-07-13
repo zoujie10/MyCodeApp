@@ -6,7 +6,9 @@
 //
 
 #import "ZJ_DataStrModel.h"
+@implementation ZJ_DataStrItem
 
+@end
 @implementation ZJ_DataStrModel
 
 @end
