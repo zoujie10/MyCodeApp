@@ -6,7 +6,13 @@
 //
 
 #import "ZJ_DataArrayModel.h"
-
-@implementation ZJ_DataArrayModel
+@implementation ZJ_DataArrayItem
 
 @end
+
+@implementation ZJ_DataArrayModel
++ (NSDictionary *)mj_objectClassInArray {
+	return @{@"data" : ZJ_DataArrayItem.class};
+}
+@end
+
