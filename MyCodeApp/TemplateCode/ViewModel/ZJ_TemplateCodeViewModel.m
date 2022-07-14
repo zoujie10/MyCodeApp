@@ -6,7 +6,9 @@
 //
 
 #import "ZJ_TemplateCodeViewModel.h"
+@interface ZJ_TemplateCodeViewModel
 
+@end
 @implementation ZJ_TemplateCodeViewModel
 
 @end
