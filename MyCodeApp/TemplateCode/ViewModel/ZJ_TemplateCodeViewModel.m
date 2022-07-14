@@ -6,6 +6,10 @@
 //
 
 #import "ZJ_TemplateCodeViewModel.h"
+#import "ZJ_DataArrayModel.h"
+#import "ZJ_DataDicModel.h"
+#import "ZJ_DataStrModel.h"
+
 @interface ZJ_TemplateCodeViewModel()
 
 @end
