@@ -6,7 +6,14 @@
 //
 
 #import "ZJ_DataDicModel.h"
+@implementation ZJ_DataDicItem
 
+@end
+@implementation ZJ_DataDicData
++ (NSDictionary *)mj_objectClassInArray {
+	return @{@"list" : ZJ_DataDicItem.class};
+}
+@end
 @implementation ZJ_DataDicModel
 
 @end

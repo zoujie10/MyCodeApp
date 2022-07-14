@@ -25,3 +25,18 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+/**
+ {
+	 "code": 0,
+	 "data": {
+		 "alsoOptionalGiftAmount": 0, 还可选赠品总金额
+		 "cartAmount": 0, 购物车商品总金额
+		 "giftAmount": 0,
+		 "giftAmountSelected": 0
+	 },
+	 "lastModifiedTime": "",
+	 "message": "",
+	 "msg": "",
+	 "requestId": ""
+ }
+ */
