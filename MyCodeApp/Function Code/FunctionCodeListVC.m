@@ -23,10 +23,10 @@ static NSString *cellID = @"cellID";
     self.view.backgroundColor = [UIColor yellowColor];
     self.dataSource = @[@"UITips",
                         @"TimeDown",
-                        @"none",
-                        @"none",
-                        @"none",
-                        @"none",
+                        @"List View",
+                        @"Two List View",
+                        @"Category List View",
+                        @"",
                         @"none",];
     [self.view addSubview:self.mainTableView];
     self.mainTableView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
