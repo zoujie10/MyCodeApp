@@ -26,8 +26,8 @@ static NSString *cellID = @"cellID";
                         @"List View",
                         @"Two List View",
                         @"Category List View",
-                        @"",
-                        @"none",];
+                        @"Button Custom Type",
+                        @"Lable Custom Type",];
     [self.view addSubview:self.mainTableView];
     self.mainTableView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
 }
