@@ -50,7 +50,7 @@
 - (UIButton *)click_Btn{
 	if (!_click_Btn) {
 		_click_Btn = [UIButton buttonWithType:UIButtonTypeCustom];
-		[_click_Btn setTitle:@"联系客服" forState:UIControlStateNormal];
+		[_click_Btn setTitle:@"" forState:UIControlStateNormal];
 		[_click_Btn setImage:[UIImage imageNamed:@"zj_button_right_arrow"] forState:UIControlStateNormal];
 		[_click_Btn setBackgroundColor:[UIColor clearColor]];
 		[_click_Btn setTitleColor:ZJRgbColor(252, 126, 57) forState:UIControlStateNormal];
