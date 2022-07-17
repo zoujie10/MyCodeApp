@@ -27,7 +27,12 @@
 		make.size.mas_equalTo(CGSizeMake(100, 35));
 	}];
 	
-	
+	[self.view addSubview:self.attTitleButton];
+	[self.attTitleButton mas_makeConstraints:^(MASConstraintMaker *make) {
+		make.centerX.mas_equalTo(self.view);
+		make.top.mas_equalTo(self.circleButton.mas_bottom).offset(15);
+		make.size.mas_equalTo(CGSizeMake(100, 35));
+	}];
 	
 }
 -(void)didTappedCommitButton:(UIButton *)sender{
@@ -65,10 +70,15 @@
 	if(!_attTitleButton){
 		_attTitleButton = [[UIButton alloc]init];
 		[_attTitleButton addTarget:self action:@selector(attTextButton:) forControlEvents: UIControlEventTouchUpInside];
-		[_attTitleButton setTitle:@"取消" forState:UIControlStateNormal];
+		[_attTitleButton setTitle:@"" forState:UIControlStateNormal];
 		_attTitleButton.backgroundColor = UIColor.whiteColor;
 		[_attTitleButton setTitleColor:UIColor.blackColor forState:UIControlStateNormal];
 		_attTitleButton.titleLabel.font = ZJFONTNORMAL(15);
+		
+		NSAttributedString *s = [[NSAttributedString alloc]initWithString:@" 图文"];
+		NSAttributedString *str = [NSMutableAttributedString set_attributeText:s withPic:@"ww_bd_mine_recommend_info_cell_price_up_arrow_icon" withAttchRect:CGRectMake(10, 0, 12, 12)];
+		[_attTitleButton setAttributedTitle:str forState:UIControlStateNormal];
+
 		_attTitleButton.layer.borderColor = ZJRgbColorA(227, 229, 233, 1).CGColor;
 		_attTitleButton.layer.borderWidth = 1;
 		_attTitleButton.layer.cornerRadius = 16;
