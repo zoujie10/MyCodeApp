@@ -7,7 +7,7 @@
 
 #import "FunctionCodeListVC.h"
 #import "ZJ_TimeDownVC.h"
-
+#import "ZJ_ButtonCustomVC.h"
 static NSString *cellID = @"cellID";
 @interface FunctionCodeListVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *mainTableView;
@@ -52,8 +52,9 @@ static NSString *cellID = @"cellID";
         [self.navigationController pushViewController:vc animated:YES];
     }else if ([self.dataSource[indexPath.row] isEqualToString:@"Macro"]){
         
-    }else if ([self.dataSource[indexPath.row] isEqualToString:@""]){
-        
+    }else if ([self.dataSource[indexPath.row] isEqualToString:@"Button Custom Type"]){
+		ZJ_ButtonCustomVC *vc = [[ZJ_ButtonCustomVC alloc]init];
+		[self.navigationController pushViewController:vc animated:YES];
     }
 }
 
