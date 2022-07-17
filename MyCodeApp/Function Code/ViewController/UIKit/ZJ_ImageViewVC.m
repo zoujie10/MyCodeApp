@@ -19,7 +19,12 @@
 	[self configUILayout];
 }
 -(void)configUILayout{
-//	self.fillImageView 
+	[self.view addSubview:self.fillImageView];
+	[self.fillImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+		make.size.mas_equalTo(CGSizeMake(120, 120));
+		make.top.mas_offset(100);
+		make.centerX.mas_equalTo(self.view);
+	}];
 }
 - (UIImageView *)fillImageView{
 	if(!_fillImageView){
