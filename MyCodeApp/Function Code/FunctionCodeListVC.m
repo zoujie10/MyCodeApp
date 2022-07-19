@@ -30,7 +30,7 @@ static NSString *cellID = @"cellID";
                         @"Category List View",
                         @"Button Custom Type",
                         @"Lable Custom Type",
-	@"ImageView Custom Type"];
+						@"ImageView Custom Type"];
     [self.view addSubview:self.mainTableView];
     self.mainTableView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
 }
@@ -58,7 +58,11 @@ static NSString *cellID = @"cellID";
     }else if ([self.dataSource[indexPath.row] isEqualToString:@"Button Custom Type"]){
 		ZJ_ButtonCustomVC *vc = [[ZJ_ButtonCustomVC alloc]init];
 		[self.navigationController pushViewController:vc animated:YES];
-    }else if ([self.dataSource[indexPath.row] isEqualToString:@"ImageView Custom Type"]){
+    }else if ([self.dataSource[indexPath.row] isEqualToString:@"Lable Custom Type"]){
+		ZJ_ButtonCustomVC *vc = [[ZJ_ButtonCustomVC alloc]init];
+		[self.navigationController pushViewController:vc animated:YES];
+	}
+	else if ([self.dataSource[indexPath.row] isEqualToString:@"ImageView Custom Type"]){
 		ZJ_ImageViewVC *vc = [[ZJ_ImageViewVC alloc]init];
 		[self.navigationController pushViewController:vc animated:YES];
 	}
