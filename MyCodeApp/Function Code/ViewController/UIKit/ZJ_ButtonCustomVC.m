@@ -10,6 +10,7 @@
 @interface ZJ_ButtonCustomVC ()
 @property (nonatomic,strong)UIButton *circleButton;
 @property (nonatomic,strong)UIButton *attTitleButton;
+@property (nonatomic,strong)UIButton *chooseButton;
 @end
 
 @implementation ZJ_ButtonCustomVC
@@ -34,12 +35,22 @@
 		make.size.mas_equalTo(CGSizeMake(100, 35));
 	}];
 	
+	[self.view addSubview:self.chooseButton];
+	[self.chooseButton mas_makeConstraints:^(MASConstraintMaker *make) {
+		make.centerX.mas_equalTo(self.view);
+		make.top.mas_equalTo(self.attTitleButton.mas_bottom).offset(15);
+		make.size.mas_equalTo(CGSizeMake(20, 20));
+	}];
+	
 }
 -(void)didTappedCommitButton:(UIButton *)sender{
 	
 }
 -(void)attTextButton:(UIButton *)sender{
 	
+}
+-(void)choose:(UIButton *)sender{
+	_chooseButton.selected = !sender.selected;
 }
 - (UIButton *)circleButton{
 	if (!_circleButton) {
@@ -85,5 +96,19 @@
 	}
 	return _attTitleButton;
 }
+- (UIButton *)chooseButton{
+	if (!_chooseButton) {
+		_chooseButton = [[UIButton alloc] init];
+//		_chooseButton.backgroundColor = ZJRgbColorA(252, 85, 108, 1);
+		_chooseButton.clipsToBounds = YES;
+		[_chooseButton setBackgroundImage:[UIImage imageNamed:@"button_selected"]forState:UIControlStateSelected];
+		[_chooseButton setBackgroundImage:[UIImage imageNamed:@"button_unSelected"]
+								 forState:UIControlStateNormal];
+		[_chooseButton addTarget:self
+						  action:@selector(choose:)
+				forControlEvents:UIControlEventTouchUpInside];
 
+	}
+	return _chooseButton;
+}
 @end
