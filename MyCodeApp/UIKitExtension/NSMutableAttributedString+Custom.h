@@ -23,6 +23,13 @@ NS_ASSUME_NONNULL_BEGIN
 +(NSMutableAttributedString *)set_attributeText:(NSAttributedString *)attStr
 										withPic:(NSString *)picName
 										withAttchRect:(CGRect)rect;
+/**
+	富文本加 + icon 图片
+*/
++(NSMutableAttributedString *)set_attributeText:(NSAttributedString *)attStr
+										withPic:(NSString *)picName
+										withAttchRect:(CGRect)rect
+										isLeftOrRight:(BOOL)isLeftOrRight;
 @end
 
 NS_ASSUME_NONNULL_END
