@@ -42,4 +42,30 @@
 	[attri insertAttributedString:string atIndex:0];
 	return  attri;
 }
+/**
+	富文本加 + icon 图片
+*/
++(NSMutableAttributedString *)set_attributeText:(NSAttributedString *)attStr
+										withPic:(NSString *)picName
+										withAttchRect:(CGRect)rect
+								  isLeftOrRight:(BOOL)isLeftOrRight{
+	//创建富文本
+	NSMutableAttributedString *attri = [[NSMutableAttributedString alloc] initWithAttributedString:attStr];
+	//NSTextAttachment可以将要插入的图片作为特殊字符处理
+	NSTextAttachment *attch = [[NSTextAttachment alloc] init];
+	//定义图片内容及位置和大小
+	attch.image = [UIImage imageNamed:picName];
+	attch.bounds = rect;
+	//创建带有图片的富文本
+	NSAttributedString *string = [NSAttributedString attributedStringWithAttachment:attch];
+	
+	if(isLeftOrRight){
+		//将图片放在第一位
+		[attri insertAttributedString:string atIndex:0];
+	}else{
+		//将图片放在最后一位
+		[attri appendAttributedString:string];
+	}
+	return  attri;
+}
 @end
