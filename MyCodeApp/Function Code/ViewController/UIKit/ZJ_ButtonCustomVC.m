@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+	self.title = @"Button";
 	self.view.backgroundColor = UIColor.whiteColor;
 	[self configUILayout];
 }
