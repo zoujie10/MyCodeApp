@@ -51,6 +51,7 @@
 		8480F780285C57F400F4303E /* UITextField+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480F77F285C57F400F4303E /* UITextField+Extension.m */; };
 		8480F783285C580000F4303E /* UILabel+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480F782285C580000F4303E /* UILabel+Extension.m */; };
 		8480F786285C5C4B00F4303E /* NSMutableAttributedString+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480F785285C5C4B00F4303E /* NSMutableAttributedString+Custom.m */; };
+		84C1582C28882C6900DCEADA /* ZJ_CustomSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C1582B28882C6900DCEADA /* ZJ_CustomSegmentView.m */; };
 		84EEB49F2865E94E009254E2 /* ZJ_TemplateCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEB49E2865E94E009254E2 /* ZJ_TemplateCodeVC.m */; };
 		84EEB4A22866A01E009254E2 /* ZJ_NormalDetailTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEB4A12866A01E009254E2 /* ZJ_NormalDetailTitleCell.m */; };
 		84EEB4A52866A03E009254E2 /* ZJ_NormalDetailTitleAndContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEB4A42866A03E009254E2 /* ZJ_NormalDetailTitleAndContentCell.m */; };
@@ -182,6 +183,8 @@
 		8480F782285C580000F4303E /* UILabel+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Extension.m"; sourceTree = "<group>"; };
 		8480F784285C5C4B00F4303E /* NSMutableAttributedString+Custom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+Custom.h"; sourceTree = "<group>"; };
 		8480F785285C5C4B00F4303E /* NSMutableAttributedString+Custom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+Custom.m"; sourceTree = "<group>"; };
+		84C1582A28882C6900DCEADA /* ZJ_CustomSegmentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJ_CustomSegmentView.h; sourceTree = "<group>"; };
+		84C1582B28882C6900DCEADA /* ZJ_CustomSegmentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJ_CustomSegmentView.m; sourceTree = "<group>"; };
 		84EEB49D2865E94E009254E2 /* ZJ_TemplateCodeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJ_TemplateCodeVC.h; sourceTree = "<group>"; };
 		84EEB49E2865E94E009254E2 /* ZJ_TemplateCodeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJ_TemplateCodeVC.m; sourceTree = "<group>"; };
 		84EEB4A02866A01E009254E2 /* ZJ_NormalDetailTitleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJ_NormalDetailTitleCell.h; sourceTree = "<group>"; };
@@ -261,6 +264,8 @@
 			children = (
 				4FCC722126899BB6006F725C /* ZJ_TimeDownView.h */,
 				4FCC722226899BB6006F725C /* ZJ_TimeDownView.m */,
+				84C1582A28882C6900DCEADA /* ZJ_CustomSegmentView.h */,
+				84C1582B28882C6900DCEADA /* ZJ_CustomSegmentView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -833,6 +838,7 @@
 				8480F73428523CDF00F4303E /* BRPickerStyle.m in Sources */,
 				8480F73828523CDF00F4303E /* BRAddressPickerView.m in Sources */,
 				8480F77A285B0D4200F4303E /* UIButton+Extension.m in Sources */,
+				84C1582C28882C6900DCEADA /* ZJ_CustomSegmentView.m in Sources */,
 				84EEB4A52866A03E009254E2 /* ZJ_NormalDetailTitleAndContentCell.m in Sources */,
 				84EEB49F2865E94E009254E2 /* ZJ_TemplateCodeVC.m in Sources */,
 				8480F774285B093100F4303E /* NSAttributedString+Custom.m in Sources */,
