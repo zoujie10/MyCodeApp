@@ -6,11 +6,13 @@
 //
 
 #import "ZJ_ButtonCustomVC.h"
+#import "ZJ_CustomSegmentView.h"
 
 @interface ZJ_ButtonCustomVC ()
 @property (nonatomic,strong)UIButton *circleButton;
 @property (nonatomic,strong)UIButton *attTitleButton;
 @property (nonatomic,strong)UIButton *chooseButton;
+@property (nonatomic,strong)ZJ_CustomSegmentView *customSegmentBtn;
 @end
 
 @implementation ZJ_ButtonCustomVC
@@ -43,6 +45,12 @@
 		make.size.mas_equalTo(CGSizeMake(20, 20));
 	}];
 	
+	[self.view addSubview:self.customSegmentBtn];
+	[self.customSegmentBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+		make.centerX.mas_equalTo(self.view.mas_centerX);
+		make.top.mas_equalTo(self.chooseButton.mas_bottom).offset(15);
+//		make.size.mas_equalTo(CGSizeMake(20, 20));
+	}];
 }
 -(void)didTappedCommitButton:(UIButton *)sender{
 	
@@ -111,5 +119,11 @@
 
 	}
 	return _chooseButton;
+}
+- (ZJ_CustomSegmentView *)customSegmentBtn{
+	if(!_customSegmentBtn){
+		_customSegmentBtn = [[ZJ_CustomSegmentView alloc]init];
+	}
+	return _customSegmentBtn;
 }
 @end
