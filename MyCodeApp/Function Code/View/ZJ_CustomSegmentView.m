@@ -8,13 +8,14 @@
 #import "ZJ_CustomSegmentView.h"
 @interface ZJ_CustomSegmentView()
 @property(nonatomic,strong) UIView *btnBackView;
+@property(nonatomic,strong) UIView *animationBgView;
 @end
 @implementation ZJ_CustomSegmentView
 
 - (instancetype)initWithFrame:(CGRect)frame {
 	if (self = [super initWithFrame:frame]) {
 		self.backgroundColor = UIColor.whiteColor;
-		
+		self.userInteractionEnabled = YES;
 		[self initContentView];
 	}
 	return self;
@@ -24,14 +25,17 @@
 	self.btnBackView.layer.cornerRadius = 16;
 	self.btnBackView.backgroundColor = ZJRgbColorA(65, 111, 252, 0.2);//rgba(41, 110, 250, 1)
 	[self addSubview:self.btnBackView];
+	
+	self.animationBgView = [[UIView alloc]init];
+	self.animationBgView.layer.cornerRadius = 12;
 	CGFloat btnWidth = 65;
 	[self.btnBackView mas_makeConstraints:^(MASConstraintMaker *make) {
 		make.width.mas_equalTo(btnWidth*2);
 		make.height.mas_equalTo(25);
-		make.left.mas_equalTo(self).offset(15);
+		make.centerX.mas_equalTo(self.mas_centerX);
 		make.top.mas_equalTo(self).offset(10);
 	}];
-	
+	[self.btnBackView addSubview:self.animationBgView];
 	[self.btnBackView addSubview:self.allBtn];
 	[self.btnBackView addSubview:self.threeMonthsBtn];
 	
@@ -52,13 +56,19 @@
 		make.right.mas_equalTo(self).offset(-15);
 	}];
 	
+	[self.animationBgView mas_makeConstraints:^(MASConstraintMaker *make) {
+		make.top.height.right.equalTo(self.btnBackView);
+		make.width.mas_equalTo(@70);
+	}];
+	self.animationBgView.backgroundColor = ZJRgbColorA(65, 111, 252, 1);
 }
 -(void)selectAllDate:(UIButton *)sender{
 	if (sender.selected == YES) return;
+	[self.btnBackView bringSubviewToFront:sender];
+	self.threeMonthsBtn.selected = sender.selected;
+	self.allBtn.selected = !sender.selected;
 	[UIView animateWithDuration:1 animations:^{
-		[self.btnBackView bringSubviewToFront:sender];
-		self.threeMonthsBtn.selected = sender.selected;
-		self.allBtn.selected = !sender.selected;
+		[self.animationBgView setOriginX:70];
 	}];
 	
 	if(self.click_type_block){
@@ -67,10 +77,11 @@
 }
 -(void)selectThreeDate:(UIButton *)sender{
 	if (sender.selected == YES) return;
+	[self.btnBackView bringSubviewToFront:sender];
+	self.allBtn.selected = sender.selected;
+	self.threeMonthsBtn.selected = !sender.selected;
 	[UIView animateWithDuration:1 animations:^{
-		[self.btnBackView bringSubviewToFront:sender];
-		self.allBtn.selected = sender.selected;
-		self.threeMonthsBtn.selected = !sender.selected;
+		[self.animationBgView setOriginX:self.threeMonthsBtn.originX];
 	}];
 	
 	if(self.click_type_block){
@@ -96,7 +107,7 @@
 		_allBtn.clipsToBounds = YES;
 		[_allBtn addTarget:self action:@selector(selectAllDate:) forControlEvents:UIControlEventTouchUpInside];
 		_allBtn.titleLabel.font = ZJFONTBOLD(13);
-		_allBtn.layer.cornerRadius = 14;
+		_allBtn.layer.cornerRadius = 12;
 	}
 	return _allBtn;
 }
@@ -113,7 +124,7 @@
 		[_threeMonthsBtn addTarget:self action:@selector(selectThreeDate:) forControlEvents:UIControlEventTouchUpInside];
 		_threeMonthsBtn.titleLabel.font = ZJFONTBOLD(13);
 		_threeMonthsBtn.selected = YES;
-		_threeMonthsBtn.layer.cornerRadius = 14;
+		_threeMonthsBtn.layer.cornerRadius = 12;
 	}
 	return _threeMonthsBtn;
 }

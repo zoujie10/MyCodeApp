@@ -49,7 +49,7 @@
 	[self.customSegmentBtn mas_makeConstraints:^(MASConstraintMaker *make) {
 		make.centerX.mas_equalTo(self.view.mas_centerX);
 		make.top.mas_equalTo(self.chooseButton.mas_bottom).offset(15);
-//		make.size.mas_equalTo(CGSizeMake(20, 20));
+		make.size.mas_equalTo(CGSizeMake(200, 30));
 	}];
 }
 -(void)didTappedCommitButton:(UIButton *)sender{
