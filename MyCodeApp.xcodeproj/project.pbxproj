@@ -33,6 +33,7 @@
 		8400E61328615E1E00419E89 /* NSDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8400E61228615E1E00419E89 /* NSDictionary+Extension.m */; };
 		8400E61628615E4200419E89 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8400E61528615E4200419E89 /* NSDate+Extension.m */; };
 		8400E64D28649DE800419E89 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8400E64C28649DE800419E89 /* UIView+Extension.m */; };
+		845B2833288B91240039E2B8 /* Watermarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 845B2832288B91240039E2B8 /* Watermarker.m */; };
 		8480F72E28523CDF00F4303E /* BRResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480F71428523CDF00F4303E /* BRResultModel.m */; };
 		8480F72F28523CDF00F4303E /* BRStringPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480F71728523CDF00F4303E /* BRStringPickerView.m */; };
 		8480F73028523CDF00F4303E /* BRDatePickerView+BR.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480F71A28523CDF00F4303E /* BRDatePickerView+BR.m */; };
@@ -146,6 +147,8 @@
 		8400E61528615E4200419E89 /* NSDate+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
 		8400E64B28649DE800419E89 /* UIView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		8400E64C28649DE800419E89 /* UIView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		845B2831288B91240039E2B8 /* Watermarker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Watermarker.h; sourceTree = "<group>"; };
+		845B2832288B91240039E2B8 /* Watermarker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Watermarker.m; sourceTree = "<group>"; };
 		8480F71428523CDF00F4303E /* BRResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRResultModel.m; sourceTree = "<group>"; };
 		8480F71528523CDF00F4303E /* BRStringPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRStringPickerView.h; sourceTree = "<group>"; };
 		8480F71628523CDF00F4303E /* BRResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRResultModel.h; sourceTree = "<group>"; };
@@ -360,6 +363,7 @@
 		4FD20B3F261C0A4400381508 /* Function Code */ = {
 			isa = PBXGroup;
 			children = (
+				845B2830288B91030039E2B8 /* Public Class */,
 				4FCC722426899BBE006F725C /* ViewController */,
 				4FCC722026899B91006F725C /* View */,
 				4FD20B89262000F900381508 /* FunctionCodeListVC.h */,
@@ -441,6 +445,15 @@
 				8D9CB1A04B4CCB62794B9656 /* libPods-MyCodeApp-MyCodeAppUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		845B2830288B91030039E2B8 /* Public Class */ = {
+			isa = PBXGroup;
+			children = (
+				845B2831288B91240039E2B8 /* Watermarker.h */,
+				845B2832288B91240039E2B8 /* Watermarker.m */,
+			);
+			path = "Public Class";
 			sourceTree = "<group>";
 		};
 		8480F71128523CBB00F4303E /* ThirdPart */ = {
@@ -851,6 +864,7 @@
 				8400E64D28649DE800419E89 /* UIView+Extension.m in Sources */,
 				84EEB52D28801C09009254E2 /* ZJ_TipMessageView.m in Sources */,
 				8480F77D285C57D000F4303E /* UIImage+Extension.m in Sources */,
+				845B2833288B91240039E2B8 /* Watermarker.m in Sources */,
 				8480F786285C5C4B00F4303E /* NSMutableAttributedString+Custom.m in Sources */,
 				8480F780285C57F400F4303E /* UITextField+Extension.m in Sources */,
 				8400E61628615E4200419E89 /* NSDate+Extension.m in Sources */,
