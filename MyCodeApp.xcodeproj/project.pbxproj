@@ -34,6 +34,7 @@
 		8400E61628615E4200419E89 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8400E61528615E4200419E89 /* NSDate+Extension.m */; };
 		8400E64D28649DE800419E89 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8400E64C28649DE800419E89 /* UIView+Extension.m */; };
 		845B2833288B91240039E2B8 /* Watermarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 845B2832288B91240039E2B8 /* Watermarker.m */; };
+		845B2836288B96860039E2B8 /* ZJ_MakePhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 845B2835288B96860039E2B8 /* ZJ_MakePhotoVC.m */; };
 		8480F72E28523CDF00F4303E /* BRResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480F71428523CDF00F4303E /* BRResultModel.m */; };
 		8480F72F28523CDF00F4303E /* BRStringPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480F71728523CDF00F4303E /* BRStringPickerView.m */; };
 		8480F73028523CDF00F4303E /* BRDatePickerView+BR.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480F71A28523CDF00F4303E /* BRDatePickerView+BR.m */; };
@@ -149,6 +150,8 @@
 		8400E64C28649DE800419E89 /* UIView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		845B2831288B91240039E2B8 /* Watermarker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Watermarker.h; sourceTree = "<group>"; };
 		845B2832288B91240039E2B8 /* Watermarker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Watermarker.m; sourceTree = "<group>"; };
+		845B2834288B96860039E2B8 /* ZJ_MakePhotoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJ_MakePhotoVC.h; sourceTree = "<group>"; };
+		845B2835288B96860039E2B8 /* ZJ_MakePhotoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJ_MakePhotoVC.m; sourceTree = "<group>"; };
 		8480F71428523CDF00F4303E /* BRResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRResultModel.m; sourceTree = "<group>"; };
 		8480F71528523CDF00F4303E /* BRStringPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRStringPickerView.h; sourceTree = "<group>"; };
 		8480F71628523CDF00F4303E /* BRResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRResultModel.h; sourceTree = "<group>"; };
@@ -279,6 +282,8 @@
 				84EEB52E2882BEC2009254E2 /* UIKit */,
 				4FCC721D26899A73006F725C /* ZJ_TimeDownVC.h */,
 				4FCC721E26899A73006F725C /* ZJ_TimeDownVC.m */,
+				845B2834288B96860039E2B8 /* ZJ_MakePhotoVC.h */,
+				845B2835288B96860039E2B8 /* ZJ_MakePhotoVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -869,6 +874,7 @@
 				8480F780285C57F400F4303E /* UITextField+Extension.m in Sources */,
 				8400E61628615E4200419E89 /* NSDate+Extension.m in Sources */,
 				84EEB4CF28702151009254E2 /* ZJ_NormalLableAndBtnCell.m in Sources */,
+				845B2836288B96860039E2B8 /* ZJ_MakePhotoVC.m in Sources */,
 				84EEB4C9286ECFF1009254E2 /* ZJ_TemplateHeaderView.m in Sources */,
 				4FD20B8F262001FA00381508 /* ThirdPartyDemoVC.m in Sources */,
 				84EEB4D22872DAB2009254E2 /* ZJ_Custom_WorkFlow.m in Sources */,

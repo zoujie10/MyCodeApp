@@ -9,6 +9,7 @@
 #import "ZJ_TimeDownVC.h"
 #import "ZJ_ButtonCustomVC.h"
 #import "ZJ_ImageViewVC.h"
+#import "ZJ_MakePhotoVC.h"
 
 static NSString *cellID = @"cellID";
 @interface FunctionCodeListVC ()<UITableViewDelegate,UITableViewDataSource>
@@ -30,7 +31,8 @@ static NSString *cellID = @"cellID";
                         @"Category List View",
                         @"Button Custom Type",
                         @"Lable Custom Type",
-						@"ImageView Custom Type"];
+						@"ImageView Custom Type",
+						@"Photo Custom"];
     [self.view addSubview:self.mainTableView];
     self.mainTableView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
 }
@@ -64,6 +66,9 @@ static NSString *cellID = @"cellID";
 	}
 	else if ([self.dataSource[indexPath.row] isEqualToString:@"ImageView Custom Type"]){
 		ZJ_ImageViewVC *vc = [[ZJ_ImageViewVC alloc]init];
+		[self.navigationController pushViewController:vc animated:YES];
+	}else if ([self.dataSource[indexPath.row] isEqualToString:@"Photo Custom"]){
+		ZJ_MakePhotoVC *vc = [[ZJ_MakePhotoVC alloc]init];
 		[self.navigationController pushViewController:vc animated:YES];
 	}
 	
