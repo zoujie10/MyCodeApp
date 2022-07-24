@@ -35,6 +35,7 @@
 		8400E64D28649DE800419E89 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8400E64C28649DE800419E89 /* UIView+Extension.m */; };
 		845B2833288B91240039E2B8 /* Watermarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 845B2832288B91240039E2B8 /* Watermarker.m */; };
 		845B2836288B96860039E2B8 /* ZJ_MakePhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 845B2835288B96860039E2B8 /* ZJ_MakePhotoVC.m */; };
+		845B2839288BAE2F0039E2B8 /* ZJ_TakePictureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 845B2838288BAE2F0039E2B8 /* ZJ_TakePictureManager.m */; };
 		8480F72E28523CDF00F4303E /* BRResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480F71428523CDF00F4303E /* BRResultModel.m */; };
 		8480F72F28523CDF00F4303E /* BRStringPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480F71728523CDF00F4303E /* BRStringPickerView.m */; };
 		8480F73028523CDF00F4303E /* BRDatePickerView+BR.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480F71A28523CDF00F4303E /* BRDatePickerView+BR.m */; };
@@ -152,6 +153,8 @@
 		845B2832288B91240039E2B8 /* Watermarker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Watermarker.m; sourceTree = "<group>"; };
 		845B2834288B96860039E2B8 /* ZJ_MakePhotoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJ_MakePhotoVC.h; sourceTree = "<group>"; };
 		845B2835288B96860039E2B8 /* ZJ_MakePhotoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJ_MakePhotoVC.m; sourceTree = "<group>"; };
+		845B2837288BAE2F0039E2B8 /* ZJ_TakePictureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJ_TakePictureManager.h; sourceTree = "<group>"; };
+		845B2838288BAE2F0039E2B8 /* ZJ_TakePictureManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJ_TakePictureManager.m; sourceTree = "<group>"; };
 		8480F71428523CDF00F4303E /* BRResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRResultModel.m; sourceTree = "<group>"; };
 		8480F71528523CDF00F4303E /* BRStringPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRStringPickerView.h; sourceTree = "<group>"; };
 		8480F71628523CDF00F4303E /* BRResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRResultModel.h; sourceTree = "<group>"; };
@@ -457,6 +460,8 @@
 			children = (
 				845B2831288B91240039E2B8 /* Watermarker.h */,
 				845B2832288B91240039E2B8 /* Watermarker.m */,
+				845B2837288BAE2F0039E2B8 /* ZJ_TakePictureManager.h */,
+				845B2838288BAE2F0039E2B8 /* ZJ_TakePictureManager.m */,
 			);
 			path = "Public Class";
 			sourceTree = "<group>";
@@ -892,6 +897,7 @@
 				84EEB4D828742478009254E2 /* ZJ_TwoTabelviewTemplateSubVC.m in Sources */,
 				84EEB50E287984D4009254E2 /* ZJ_RightTableViewCell.m in Sources */,
 				84EEB4D52874227C009254E2 /* ZJ_TwoTabelviewTemplateVC.m in Sources */,
+				845B2839288BAE2F0039E2B8 /* ZJ_TakePictureManager.m in Sources */,
 				84EEB527287DAF60009254E2 /* ZJ_DataDicModel.m in Sources */,
 				4FD20B62261D6A3000381508 /* NSArray+Extension.m in Sources */,
 				8480F72E28523CDF00F4303E /* BRResultModel.m in Sources */,

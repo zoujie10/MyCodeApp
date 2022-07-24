@@ -8,7 +8,8 @@
 #import "ZJ_MakePhotoVC.h"
 #import <Photos/Photos.h>
 #import <CoreServices/CoreServices.h>
-
+#import "ZJ_TakePictureManager.h"
+#import "Watermarker.h"
 @interface ZJ_MakePhotoVC ()
 @property (nonatomic,strong)UIImageView *photoImageView;
 @end
@@ -18,9 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+	self.view.backgroundColor = UIColor.whiteColor;
 	[self.view addSubview:self.photoImageView];
 	[self.photoImageView mas_makeConstraints:^(MASConstraintMaker *make) {
 		make.center.equalTo(self.view);
+		make.size.mas_equalTo(CGSizeMake(120, 120));
 	}];
 }
 -(void)makePhoto{
@@ -55,11 +58,20 @@
 		[alert addAction:actionSet];
 		[self.navigationController presentViewController:alert animated:YES completion:^{}];
 	} else if ([PHPhotoLibrary authorizationStatus] == 0) { // 未请求过相册权限
-//		[[TZImageManager manager] requestAuthorizationWithCompletion:^{
-//			[self takePhoto];
-//		}];
-	} else {
-//		[self pushImagePickerController];
+		WeakSelf;
+		[ZJ_TakePictureManager manager].currentViewController = self;
+		[[ZJ_TakePictureManager manager] takePhotoComplete:^(UIImage * _Nonnull image) {
+			NSData *upImage = [Watermarker waterImageLocationAndUserInformationWithImage:image isNeedDistance:NO];
+			weakSelf.photoImageView.image = [UIImage imageWithData:upImage];
+		}];
+		
+	}else {
+		WeakSelf;
+		[ZJ_TakePictureManager manager].currentViewController = self;
+		[[ZJ_TakePictureManager manager] takePhotoComplete:^(UIImage * _Nonnull image) {
+			weakSelf.photoImageView.image = image;
+		}];
+		
 	}
 }
 - (UIImageView *)photoImageView{
@@ -67,7 +79,7 @@
 		_photoImageView = [[UIImageView alloc]init];
 		_photoImageView.userInteractionEnabled = YES;
 		_photoImageView.contentMode = UIViewContentModeScaleAspectFit;
-		
+		_photoImageView.backgroundColor = UIColor.orangeColor;
 		UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]init];
 		[tap addTarget:self action:@selector(makePhoto)];
 		[_photoImageView addGestureRecognizer:tap];

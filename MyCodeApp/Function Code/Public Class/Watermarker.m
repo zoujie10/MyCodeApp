@@ -46,8 +46,6 @@
 	
 	[[NSUserDefaults standardUserDefaults] setObject:gap forKey:LocalTimeGap];
 	[[NSUserDefaults standardUserDefaults] synchronize];
-	
-	
 }
 
 + (NSData *)waterImageLocationAndUserInformationWithImage:(UIImage *)image
@@ -138,7 +136,6 @@
 	//NSTimeInterval time = CFAbsoluteTimeGetCurrent();
 	NSData *compressData = [self compressImageWithImage:image maxLength:maxLength];
 	//NSLog(@"-----ddd----%.1f", CFAbsoluteTimeGetCurrent() - time);
-	
 	return compressData;
 }
 
@@ -161,8 +158,6 @@
 	}
 	return resultImage;
 }
-
-
 +(NSData *)compressImageWithImage:(UIImage *)image maxLength:(NSUInteger)maxLength{
 	
 	if (maxLength <= 0) {
@@ -214,28 +209,18 @@
 	return data;
 }
 
-+ (NSString *)getUserInformationWatermarkWithIsNeedDistance:(BOOL)isNeedDistance
-{
-
++ (NSString *)getUserInformationWatermarkWithIsNeedDistance:(BOOL)isNeedDistance{
 	NSString *distanceString = @"";
 
 //	if (isNeedDistance) {
-//
 //		NSString *originalDistanceString = [SFALocationManager distanceWithCustomerLocation];
 //
 //		distanceString = !IsEmptyString(originalDistanceString)? [NSString stringWithFormat:@"距客户 %@", originalDistanceString]:@"";
 //	}
 
-
-
-
 	NSString *dateString = [NSDate getVerifiedCurrentDateString];
-
-
-	NSString *userInformaionString = [NSString stringWithFormat:@"%@\n%@ %@",dateString ,@"邹杰",@"00381342"];
-
-
-	NSString *locationAndUserInformationString = [NSString stringWithFormat:@"上海市 浦东新区 塘桥街道 \n%@",userInformaionString];
+	NSString *userInformaionString = [NSString stringWithFormat:@"%@",dateString];
+	NSString *locationAndUserInformationString = [NSString stringWithFormat:@"%@ \n上海市 浦东新区 塘桥街道",userInformaionString];
 
 //	if ([UserManager shared].province && [UserManager shared].city && [UserManager shared].district && [UserManager shared].street ) {
 //		locationAndUserInformationString = [NSString stringWithFormat:@"%@%@%@%@%@\n%@",[UserManager shared].province,[UserManager shared].city,[UserManager shared].district,[UserManager shared].street,[UserManager shared].number?:@"",userInformaionString];
@@ -249,9 +234,5 @@
 
 	return [NSString stringWithFormat:@"%@   %@",locationAndUserInformationString,distanceString];
 }
-
-
-
-
 @end
 
