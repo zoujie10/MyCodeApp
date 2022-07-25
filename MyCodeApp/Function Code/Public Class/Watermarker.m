@@ -6,8 +6,6 @@
 //
 
 #import "Watermarker.h"
-//#import "SFACustomerDateConverter.h"
-//#import "SFALocationManager.h"
 
 
 #define DefaultCompressSize 250

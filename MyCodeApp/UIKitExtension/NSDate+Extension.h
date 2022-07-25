@@ -33,16 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString*)getVerifiedCurrentDateString;
 
 
-
-
 /// 将标准格式的时间字符串转化成0000.00.00格式的字符串
 + (NSString *)convertStandardDateStringToDotString:(NSString *)string;
-
-
-
-
-
-
 
 + (NSString *)convertDateToString:(NSDate *)date;
 + (NSDate *)convertStringToDate:(NSString *)string;
