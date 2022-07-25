@@ -7,9 +7,7 @@
 
 #import "Watermarker.h"
 
-
 #define DefaultCompressSize 250
-
 #define LocalTimeGap @"LocalTimeGap"
 
 @interface Watermarker()
