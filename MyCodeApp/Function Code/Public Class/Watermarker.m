@@ -11,7 +11,6 @@
 #define LocalTimeGap @"LocalTimeGap"
 
 @interface Watermarker()
-
 @end
 @implementation Watermarker
 
@@ -207,27 +206,9 @@
 
 + (NSString *)getUserInformationWatermarkWithIsNeedDistance:(BOOL)isNeedDistance{
 	NSString *distanceString = @"";
-
-//	if (isNeedDistance) {
-//		NSString *originalDistanceString = [SFALocationManager distanceWithCustomerLocation];
-//
-//		distanceString = !IsEmptyString(originalDistanceString)? [NSString stringWithFormat:@"距客户 %@", originalDistanceString]:@"";
-//	}
-
 	NSString *dateString = [NSDate getVerifiedCurrentDateString];
 	NSString *userInformaionString = [NSString stringWithFormat:@"%@",dateString];
 	NSString *locationAndUserInformationString = [NSString stringWithFormat:@"%@ \n上海市 浦东新区 塘桥街道",userInformaionString];
-
-//	if ([UserManager shared].province && [UserManager shared].city && [UserManager shared].district && [UserManager shared].street ) {
-//		locationAndUserInformationString = [NSString stringWithFormat:@"%@%@%@%@%@\n%@",[UserManager shared].province,[UserManager shared].city,[UserManager shared].district,[UserManager shared].street,[UserManager shared].number?:@"",userInformaionString];
-//	}else if ([UserManager shared].longitude && [UserManager shared].latitude)
-//	{
-//		locationAndUserInformationString = [NSString stringWithFormat:@"%@%@\n%@",[UserManager shared].longitude,[UserManager shared].latitude,userInformaionString];
-//	}
-//	else{
-//		locationAndUserInformationString = [NSString stringWithFormat:@"获取不到定位\n%@",userInformaionString];
-//	}
-
 	return [NSString stringWithFormat:@"%@   %@",locationAndUserInformationString,distanceString];
 }
 @end

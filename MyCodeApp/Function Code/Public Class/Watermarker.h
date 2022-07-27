@@ -23,10 +23,6 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSData *)compressImageWithImage:(UIImage *)image;
 + (NSData *)compressImageWithImage:(UIImage *)image maxLength:(NSUInteger)maxLength;
 
-//+ (UIImage *)scaleImage:(UIImage *)image toKb:(NSInteger)kb;
-//
-//+ (UIImage *)scaleToSize:(UIImage *)img size:(CGSize)size;
-
 /**
  校验本地时间
  */
