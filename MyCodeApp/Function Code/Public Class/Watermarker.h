@@ -13,20 +13,17 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  指定水印 地址\n时间\n用户名账号
  */
-+ (NSData *)waterImageLocationAndUserInformationWithImage:(UIImage *)image;
++(NSData *)waterImageLocationAndUserInformationWithImage:(UIImage *)image;
 
-+ (NSData *)waterImageLocationAndUserInformationWithImage:(UIImage *)image isNeedDistance:(BOOL)isNeedDistance;
++(NSData *)waterImageLocationAndUserInformationWithImage:(UIImage *)image isNeedDistance:(BOOL)isNeedDistance;
 
-+ (NSData *)waterImageLocationAndUserInformationWithImage:(UIImage *)image  maxLength:(NSUInteger)maxLength;
++(NSData *)waterImageLocationAndUserInformationWithImage:(UIImage *)image  maxLength:(NSUInteger)maxLength;
 
-+ (UIImage *)compressImageSize:(UIImage *)image toByte:(NSUInteger)maxLength;
-+ (NSData *)compressImageWithImage:(UIImage *)image;
-+ (NSData *)compressImageWithImage:(UIImage *)image maxLength:(NSUInteger)maxLength;
++(UIImage *)compressImageSize:(UIImage *)image toByte:(NSUInteger)maxLength;
 
-/**
- 校验本地时间
- */
-+ (void)checkLocalTime;
++(NSData *)compressImageWithImage:(UIImage *)image;
+
++(NSData *)compressImageWithImage:(UIImage *)image maxLength:(NSUInteger)maxLength;
 @end
 
 NS_ASSUME_NONNULL_END

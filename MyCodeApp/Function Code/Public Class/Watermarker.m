@@ -14,35 +14,6 @@
 @end
 @implementation Watermarker
 
-/**
- 校验本地时间
- */
-+ (void)checkLocalTime{
-//	[_HTTPRequestMgr requestServerTimeWithSuccess:^(id  _Nonnull response) {
-//
-//		SFAServerTimeModel *model = [SFAServerTimeModel mj_objectWithKeyValues:response];
-//
-//		if (model.code == 0) {
-//			[self checkLocalTimeWithServerTimeString:model.data];
-//		}
-//
-//	} failure:^(NSError * _Nonnull error) {
-//
-//	}];
-}
-
-+ (void)checkLocalTimeWithServerTimeString:(NSString *)serverTimeString
-{
-	NSTimeInterval serverTimeInterval = [serverTimeString doubleValue]/1000;
-	
-	NSTimeInterval currentTimeInterval = [[NSDate date] timeIntervalSince1970];
-	
-	NSString  *gap = [NSString stringWithFormat:@"%f",serverTimeInterval - currentTimeInterval];
-	
-	[[NSUserDefaults standardUserDefaults] setObject:gap forKey:LocalTimeGap];
-	[[NSUserDefaults standardUserDefaults] synchronize];
-}
-
 + (NSData *)waterImageLocationAndUserInformationWithImage:(UIImage *)image
 {
 	
