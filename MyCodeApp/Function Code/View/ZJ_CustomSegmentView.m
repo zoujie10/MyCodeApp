@@ -67,9 +67,6 @@
 	[self.btnBackView bringSubviewToFront:sender];
 	self.threeMonthsBtn.selected = sender.selected;
 	self.allBtn.selected = !sender.selected;
-	[UIView animateWithDuration:1 animations:^{
-		[self.animationBgView setOriginX:70];
-	}];
 	
 	if(self.click_type_block){
 		self.click_type_block(SelectAndSearch_All);
@@ -80,10 +77,7 @@
 	[self.btnBackView bringSubviewToFront:sender];
 	self.allBtn.selected = sender.selected;
 	self.threeMonthsBtn.selected = !sender.selected;
-	[UIView animateWithDuration:1 animations:^{
-		[self.animationBgView setOriginX:self.threeMonthsBtn.originX];
-	}];
-	
+
 	if(self.click_type_block){
 		self.click_type_block(SelectAndSearch_ThreeMonth);
 	}
