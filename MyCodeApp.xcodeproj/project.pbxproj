@@ -34,6 +34,7 @@
 		8400E61628615E4200419E89 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8400E61528615E4200419E89 /* NSDate+Extension.m */; };
 		8400E64D28649DE800419E89 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8400E64C28649DE800419E89 /* UIView+Extension.m */; };
 		8445E0CD28B909CD009AD4DB /* ZJ_POPAlertVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8445E0CC28B909CD009AD4DB /* ZJ_POPAlertVC.m */; };
+		8445E0D028BA5E62009AD4DB /* ZJ_POPSelectTipsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8445E0CF28BA5E62009AD4DB /* ZJ_POPSelectTipsVC.m */; };
 		845B2833288B91240039E2B8 /* Watermarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 845B2832288B91240039E2B8 /* Watermarker.m */; };
 		845B2836288B96860039E2B8 /* ZJ_MakePhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 845B2835288B96860039E2B8 /* ZJ_MakePhotoVC.m */; };
 		845B2839288BAE2F0039E2B8 /* ZJ_TakePictureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 845B2838288BAE2F0039E2B8 /* ZJ_TakePictureManager.m */; };
@@ -152,6 +153,8 @@
 		8400E64C28649DE800419E89 /* UIView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		8445E0CB28B909CD009AD4DB /* ZJ_POPAlertVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJ_POPAlertVC.h; sourceTree = "<group>"; };
 		8445E0CC28B909CD009AD4DB /* ZJ_POPAlertVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJ_POPAlertVC.m; sourceTree = "<group>"; };
+		8445E0CE28BA5E62009AD4DB /* ZJ_POPSelectTipsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJ_POPSelectTipsVC.h; sourceTree = "<group>"; };
+		8445E0CF28BA5E62009AD4DB /* ZJ_POPSelectTipsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJ_POPSelectTipsVC.m; sourceTree = "<group>"; };
 		845B2831288B91240039E2B8 /* Watermarker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Watermarker.h; sourceTree = "<group>"; };
 		845B2832288B91240039E2B8 /* Watermarker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Watermarker.m; sourceTree = "<group>"; };
 		845B2834288B96860039E2B8 /* ZJ_MakePhotoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJ_MakePhotoVC.h; sourceTree = "<group>"; };
@@ -464,6 +467,8 @@
 			children = (
 				8445E0CB28B909CD009AD4DB /* ZJ_POPAlertVC.h */,
 				8445E0CC28B909CD009AD4DB /* ZJ_POPAlertVC.m */,
+				8445E0CE28BA5E62009AD4DB /* ZJ_POPSelectTipsVC.h */,
+				8445E0CF28BA5E62009AD4DB /* ZJ_POPSelectTipsVC.m */,
 			);
 			path = PopVC;
 			sourceTree = "<group>";
@@ -892,6 +897,7 @@
 				8480F780285C57F400F4303E /* UITextField+Extension.m in Sources */,
 				8400E61628615E4200419E89 /* NSDate+Extension.m in Sources */,
 				84EEB4CF28702151009254E2 /* ZJ_NormalLableAndBtnCell.m in Sources */,
+				8445E0D028BA5E62009AD4DB /* ZJ_POPSelectTipsVC.m in Sources */,
 				845B2836288B96860039E2B8 /* ZJ_MakePhotoVC.m in Sources */,
 				84EEB4C9286ECFF1009254E2 /* ZJ_TemplateHeaderView.m in Sources */,
 				4FD20B8F262001FA00381508 /* ThirdPartyDemoVC.m in Sources */,
