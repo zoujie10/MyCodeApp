@@ -21,6 +21,7 @@
     // Do any additional setup after loading the view.
 	self.view.backgroundColor = UIColor.whiteColor;
 	[self.view addSubview:self.photoImageView];
+	[self.photoImageView shakeAnimation];
 	[self.photoImageView mas_makeConstraints:^(MASConstraintMaker *make) {
 		make.center.equalTo(self.view);
 		make.size.mas_equalTo(CGSizeMake(120, 120));

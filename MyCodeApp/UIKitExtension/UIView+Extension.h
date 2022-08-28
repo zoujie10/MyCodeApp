@@ -28,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)setRadius:(CGFloat) radius;
 
 -(void)setBorder:(CGFloat)width color:(UIColor *)color;
+
+-(void)shakeAnimation;
 @end
 
 NS_ASSUME_NONNULL_END
