@@ -9,8 +9,10 @@
 #import "BRPickerView.h"
 #import "ZJUILabel.h"
 #import "YBModelFile.h"
-@interface ThirdPartyDemoVC ()
+@interface ThirdPartyDemoVC ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic, strong) BRDatePickerView *datePickerView;
+@property (nonatomic, strong) UITableView *mainTableView;
+@property (nonatomic, strong) NSArray *thirdPartyName;
 @end
 
 @implementation ThirdPartyDemoVC
@@ -18,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor orangeColor];
+	self.thirdPartyName = @[@"BRPickerView",@"YBModelFile"];
 	ZJUILabel *label = [[ZJUILabel alloc]init];
 	[self.view addSubview:label];
 	
@@ -29,6 +32,11 @@
 	YBMFConfig *config = [YBMFConfig defaultConfig];
 	config.framework = YBMFFrameworkMJ;
 	[YBModelFile createFileWithName:@"FeedBackListModel" data:@"FeedBackList" config:config];
+	
+	[self.view addSubview:self.mainTableView];
+	[self.mainTableView mas_makeConstraints:^(MASConstraintMaker *make) {
+		make.edges.equalTo(self.view);
+	}];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
@@ -53,5 +61,31 @@
 //	// 添加选择器到容器视图
 //	[datePickerView addPickerToView:containerView];
 }
-
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+	return self.thirdPartyName.count;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellID"];
+	cell.textLabel.text = self.thirdPartyName[indexPath.row];
+	return cell;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+	if(indexPath.row == 0){
+		
+	}else if (indexPath.row == 1){
+		
+	}
+}
+- (UITableView *)mainTableView{
+	if(!_mainTableView){
+		_mainTableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStyleGrouped];
+		_mainTableView.contentInset = UIEdgeInsetsMake(15, 0, 0, 0);
+		_mainTableView.delegate = self;
+		_mainTableView.dataSource = self;
+		_mainTableView.showsVerticalScrollIndicator = NO;
+		_mainTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+		_mainTableView.backgroundColor = ZJRgbColor(247, 247, 247);
+	}
+	return _mainTableView;
+}
 @end
