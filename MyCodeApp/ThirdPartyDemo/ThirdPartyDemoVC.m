@@ -20,13 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor orangeColor];
-	self.thirdPartyName = @[@"BRPickerView",@"YBModelFile"];
-	ZJUILabel *label = [[ZJUILabel alloc]init];
-	[self.view addSubview:label];
-	
-	label.setAttTextIcon(@"  测试链式语法",@"icon_tabbar_lab_selected",CGRectMake(0, -2, 12, 14))
-		.setUpTextColor(UIColor.blackColor);
-	label.frame = CGRectMake(100, 100, 200, 30);
+	self.thirdPartyName = @[@"BRPickerView",@"YBModelFile",@"OC链式语法"];
 	
 	[self.view addSubview:self.mainTableView];
 	[self.mainTableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -34,10 +28,6 @@
 	}];
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-	
-
-}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 	return self.thirdPartyName.count;
 }
@@ -53,6 +43,7 @@
 		[self creatDataModel];
 	}
 }
+
 -(void)pickViewMethod{
 	BRDatePickerView *datePickerView = [[BRDatePickerView alloc]init];
 	datePickerView.pickerMode = BRDatePickerModeYMDH;
@@ -81,6 +72,14 @@
 	[YBModelFile createFileWithName:@"FeedBackListModel" data:@"FeedBackList" config:config];
 	
 }
+-(void)linkLanguage{
+	ZJUILabel *label = [[ZJUILabel alloc]init];
+	[self.view addSubview:label];
+	
+	label.setAttTextIcon(@"  测试链式语法",@"icon_tabbar_lab_selected",CGRectMake(0, -2, 12, 14))
+		.setUpTextColor(UIColor.blackColor);
+}
+#pragma mark lazy load
 - (UITableView *)mainTableView{
 	if(!_mainTableView){
 		_mainTableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStyleGrouped];
